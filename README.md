@@ -1,2 +1,2 @@
-# Project-X-Minor-
+# Project-X-Minor
 For Minor Project.
