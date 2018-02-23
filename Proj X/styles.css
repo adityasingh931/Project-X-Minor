@@ -1,19 +1,13 @@
-html {
+/* html {
     margin: 0;
     padding: 0;
     height: 100%;
+} */
+
+body{
+    background-color: #f8f6f9db;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-}
-
-.color{
-	background-color:#222;
-	border-width:0px;
-    color:#9d9d9d;
-}
 #col{
 	margin:3px;
 	min-height:80px;
@@ -42,10 +36,21 @@ body {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #222;
+    background-color: #222222c6;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px #3b3b3b40;
     z-index: 1;
+    border-radius: 5px;
+}
+
+/* header inside the dropdown */
+.dropdown-header {
+    display: block;
+    padding: 3px 20px;
+    font-size: 12px;
+    line-height: 1.42857143;
+    color: #e8e8e8cc;
+    white-space: nowrap;
 }
 
 /* Links inside the dropdown */
@@ -57,7 +62,9 @@ body {
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #080808}
+.dropdown-content a:hover {
+    background-color: #bf2d2da1
+}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
@@ -67,7 +74,8 @@ body {
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
     background-color: #080808;
-} 
+}
+
 /*footer*/
 #footer {
 position:absolute;
