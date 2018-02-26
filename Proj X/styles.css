@@ -184,13 +184,14 @@ display: inline;
     background-image: url("images/deliveryboy.jpg");
 
     /* Set a specific height */
-    height: 50%;
+    height: 90%;
 
     /* Position and center the image to scale nicely on all screens */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    margin-top: 0px;
 }
 
 /* Place text in the middle of the image */
@@ -201,5 +202,20 @@ display: inline;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    text-shadow: #131313c9;
+    text-shadow: 2px 2px #31313191;
+}
+.hero-text h1{
+    font-size: 54px;
+}
+.hero-text p{
+    font-size: 22px;
+
+}
+
+.lower-section{
+    background-color: #8a7b7b;
+}
+
+.lower-section row{
+    background-color: #ffffff ;
 }
