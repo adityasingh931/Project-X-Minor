@@ -12,10 +12,7 @@ body, main{
 }
 
 #col{
-	margin:3px;
 	min-height:80px;
-	text-align:center;
-    margin-top:0px;
 	width:100px;
 }
 
