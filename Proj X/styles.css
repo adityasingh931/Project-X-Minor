@@ -1,13 +1,14 @@
 html {
     margin: 0;
     padding: 0;
-    height: max-content; 
+    height: 100%; 
 }
 
-body{
+body, main{
     background-color: #f8f6f9db;
-    margin: 0;
+    margin: 0px;
     padding: 0;
+    height: 100%;
 }
 
 #col{
@@ -164,4 +165,30 @@ display: inline;
     padding:20px;
     width: 50%;
     border-radius:10px;
+}
+
+/* The hero image */
+.hero-image {
+    /* The image used */
+    background-image: url("images/deliveryboy.jpg");
+
+    /* Set a specific height */
+    height: 50%;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: #131313c9;
 }
