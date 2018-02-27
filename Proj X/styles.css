@@ -221,3 +221,17 @@ display: inline;
 #mobile{
     z-index: 0;
 }
+.flex-container {
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    justify-content: space-around; 
+    text-align: center;
+
+  }
+  .flex-container a{
+    border-radius:0px;
+   
+
+  }
+ 
