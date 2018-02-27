@@ -216,3 +216,8 @@ display: inline;
 .lower-section row{
     background-color: #ffffff ;
 }
+
+/* contact us mobile number */
+#mobile{
+    z-index: 0;
+}
