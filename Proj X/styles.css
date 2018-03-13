@@ -1,20 +1,18 @@
 html {
     margin: 0;
     padding: 0;
-    height: max-content; 
+    height: 100%; 
 }
 
-body{
+body, main{
     background-color: #f8f6f9db;
     margin: 0;
     padding: 0;
+    height:100%;
 }
 
 #col{
-	margin:3px;
 	min-height:80px;
-	text-align:center;
-    margin-top:0px;
 	width:100px;
 }
 
@@ -22,16 +20,20 @@ body{
  /* Dropdown Button */
 .dropbtn {
     background-color: #222;
-    color: #9d9d9d;
+    color:#9d9d9d;
     padding: 15px;
-    font-size: 13px;
+    font-size: 14px;
     border: none;
+}
+.dropbtn a{
+	color:#9d9d9d;
 }
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
     position: relative;
     display: inline-block;
+	
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -43,6 +45,7 @@ body{
     box-shadow: 0px 8px 16px 0px #3b3b3b40;
     z-index: 1;
     border-radius: 5px;
+	
 }
 
 /* header inside the dropdown */
@@ -77,7 +80,13 @@ body{
 .dropdown:hover .dropbtn {
     background-color: #080808;
 }
-
+.dropbtn a:hover{
+	color:#fff;
+	 text-decoration: none;
+}
+.dropbtn li{
+	    text-decoration: none;
+}
 /*footer*/
 #footer {
     position:relative;
@@ -165,3 +174,64 @@ display: inline;
     width: 50%;
     border-radius:10px;
 }
+
+/* The hero image */
+.hero-image {
+    /* The image used */
+    background-image: url("images/deliveryboy.jpg");
+
+    /* Set a specific height */
+    height: 90%;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: 0px;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px #31313191;
+}
+.hero-text h1{
+    font-size: 54px;
+}
+.hero-text p{
+    font-size: 22px;
+
+}
+
+.lower-section{
+    background-color: #8a7b7b;
+}
+
+.lower-section row{
+    background-color: #ffffff ;
+}
+
+/* contact us mobile number */
+#mobile{
+    z-index: 0;
+}
+.flex-container {
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    justify-content: space-around; 
+    text-align: center;
+
+  }
+  .flex-container a{
+    border-radius:0px;
+   
+
+  }
+ 
