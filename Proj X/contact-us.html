@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>Project X-Minor - Theme</title>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+	 crossorigin="anonymous"></script>
+	<!-- Bootstrap -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href="styles.css" rel="stylesheet">
+	<!-- Custom Glyphicon -->
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdtPQN4KVOT2n-UJh8J3kwyMM41V2tRCI&callback=initMap"
+	 type="text/javascript"></script>
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+	<!-- header section -->
+	<Header>
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+
+					<a class="navbar-brand" href="index.html">
+						<div class="row">
+							<div class="col-md-3 col-xs-3" id="col">
+								<img class="img-responsive circle" src="images/logo.png">
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li>
+							<a href="services.html">services</a>
+						</li>
+						<li>
+							<div class="dropdown">
+								<button class="dropbtn">
+									<a href="about-us.html">About Us</a>
+									<span class="caret"></span>
+								</button>
+								<div class="dropdown-content">
+									<div class="dropdown-header">Terms of Use</div>
+									<a href="about-us/legal-disclaimer.html">Legal Disclaimer</a>
+									<a href="about-us/privacy-policy.html"> Privacy Policy </a>
+									<div class="dropdown-header">Words from our Customers</div>
+									<a href="about-us/testimonials.html">Testimonials</a>
+								</div>
+							</div>
+
+						</li>
+
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="#">
+								<span class="glyphicon glyphicon-envelope"></span> Contact Us</a>
+						</li>
+
+					</ul>
+					<form class="navbar-form navbar-right" class="button">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Search...">
+						</div>
+						<button type="submit" class="btn btn-danger">Search</button>
+					</form>
+				</div>
+			</div>
+		</nav>
+	</Header>
+
+	<!-- main body section -->
+	<main id="main">
+		<!-- google map of office address -->
+		<script type="text/javascript">
+			function initMap() {
+				var location = { lat: 23.250115, lng: 77.522173 };
+				var map = new google.maps.Map(document.getElementById("map"), {
+					zoom: 15,
+					mapTypeId: 'satellite',
+					center: location
+				});
+				var marker = new google.maps.Marker({
+					position: location,
+					map: map
+				});
+			}
+		</script>
+		<div id="map"></div>
+
+		<!-- Form Box -->
+		<div class="form-data">
+			<h2>
+				<strong>Send us a message:-</strong>
+			</h2>
+			<p>
+				<em>We would love to hear from you.</em>
+			</p>
+			<!-- Form & Table -->
+			<table>
+				<form action="" method=post>
+					<tbody>
+						<tr>
+							<div class="form-group">
+								<td>
+									<label for="name">Enter Full Name
+										<span class="form-required">*</span>
+									</label>
+								</td>
+								<td>
+									<input id="name" class="form-control" type="text" name="name" placeholder="Full Name" required />
+								</td>
+							</div>
+						</tr>
+						<tr>
+							<td>
+								<label for="email">Enter Email
+									<span class="form-required">*</span>
+								</label>
+							</td>
+							<td>
+								<input id="email" class="form-control" type="email" name="email" placeholder="Email" required />
+							</td>
+						</tr>
+						<tr>
+							<div class="form-group">
+								<td>
+									<label for="mobile">Enter Mobile No.
+										<span class="form-required">*</span>
+									</label>
+								</td>
+								<td>
+									<div class="input-group">
+										<div class="input-group-addon">+91</div>
+										<input type="number" class="form-control" id="mobile" placeholder="Mobile Number" pattern="[0-9]{5}[-][0-9]{7}[-][0-9]{1}">
+									</div>
+							</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="message">Enter your Message
+									<span class="form-required">*</span>
+								</label>
+							</td>
+							<td>
+								<textarea id="message" class="form-control" rows="3" required></textarea>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input class="btn btn-primary" type="submit" value="Send Message">
+							</td>
+						</tr>
+					</tbody>
+				</form>
+			</table>
+		</div>
+
+		<!-- address details for the office -->
+		<div class="container contact-details">
+			<h3>Find Us at :-</h3>
+			<label for="address">Address:-</label>
+			<p id="address"> LNCTE Campus, Raisen Road
+				<br> Bhopal, M.P.</p>
+			<label for="phone">Phone:-</label>
+			<p id="phone"> +919876543210</p>
+			<label for="contact-mail">Our Email Id:</label>
+			<a id="contact-mail" href="mailto:contact@xyz.com">contact@xyz.com</a>
+		</div>
+	</main>
+
+	<!-- footer section -->
+	<footer>
+		<div id="footer">
+			<ul>
+				<li align=left>
+					<a href="http://facebook.com/Abhijeet.Abzs">
+						<i class="fab fa-facebook-square"></i>
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="">Careers</a>
+				</li>
+				<li>
+					<a href="">Help</a>
+				</li>
+				<li>
+					<a href="">About</a>
+				</li>
+				<li>Contact information:
+					<a href="mailto:contact@xyz.com">Mail to our company</a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>
