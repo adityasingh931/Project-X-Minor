@@ -33,7 +33,6 @@ body, main{
 .dropdown {
     position: relative;
     display: inline-block;
-	
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -45,7 +44,6 @@ body, main{
     box-shadow: 0px 8px 16px 0px #3b3b3b40;
     z-index: 1;
     border-radius: 5px;
-	
 }
 
 /* header inside the dropdown */
@@ -206,7 +204,6 @@ display: inline;
 }
 .hero-text p{
     font-size: 22px;
-
 }
 
 .lower-section{
@@ -227,11 +224,7 @@ display: inline;
     justify-content: center;
     justify-content: space-around; 
     text-align: center;
-
   }
   .flex-container a{
     border-radius:0px;
-   
-
   }
- 
