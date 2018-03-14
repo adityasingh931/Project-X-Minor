@@ -13,10 +13,10 @@
 	 crossorigin="anonymous"></script>
 	<!-- Bootstrap -->
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link href="styles.css" rel="stylesheet">
 	<!-- Custom Glyphicon -->
 	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-	<script src="java.js"> </script>
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdtPQN4KVOT2n-UJh8J3kwyMM41V2tRCI&callback=initMap"
 	 type="text/javascript"></script>
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -49,7 +49,7 @@
 				</div>
 				<div class="collapse navbar-collapse" id="myNavbar">
 					<ul class="nav navbar-nav">
-						<li class="active">
+						<li>
 							<a href="index.html">Home</a>
 						</li>
 						<li>
@@ -65,9 +65,6 @@
 									<div class="dropdown-header">Terms of Use</div>
 									<a href="about-us/legal-disclaimer.html">Legal Disclaimer</a>
 									<a href="about-us/privacy-policy.html"> Privacy Policy </a>
-									<ul>
-										<li class="divider"></li>
-									</ul>
 									<div class="dropdown-header">Words from our Customers</div>
 									<a href="about-us/testimonials.html">Testimonials</a>
 								</div>
@@ -157,7 +154,7 @@
 								<td>
 									<div class="input-group">
 										<div class="input-group-addon">+91</div>
-										<input type="text" class="form-control" id="mobile" placeholder="Mobile Number">
+										<input type="number" class="form-control" id="mobile" placeholder="Mobile Number" pattern="[0-9]{5}[-][0-9]{7}[-][0-9]{1}">
 									</div>
 							</div>
 							</td>
@@ -190,7 +187,7 @@
 				<br> Bhopal, M.P.</p>
 			<label for="phone">Phone:-</label>
 			<p id="phone"> +919876543210</p>
-			<label for="contact-mail">Our Email Id:- </label>
+			<label for="contact-mail">Our Email Id:</label>
 			<a id="contact-mail" href="mailto:contact@xyz.com">contact@xyz.com</a>
 		</div>
 	</main>
@@ -220,8 +217,5 @@
 			</ul>
 		</div>
 	</footer>
-	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
-
 </html>
