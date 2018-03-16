@@ -261,6 +261,7 @@ display: inline;
     font-weight: bold;
   }
 
+
   /* login/signup area property to remove the outline of div after clicking */
  a:focus, a:hover
   {
@@ -277,3 +278,4 @@ display: inline;
  .name input{
      width:100%;
  }
+
