@@ -65,27 +65,53 @@ hr.style14 {
   /* .te-img{
       display: block;
   }*/
-  #com1{
+  .com1{
       padding-top: 2%;
   }
   .sh-card{
-      padding: 2%;
+      padding: 1%;
+      margin: 2%;
+      background: rgb(221, 238, 243);
+      box-shadow: 1px 3px 8px #888888;
+      border-radius: 6px;
   }
   span.name-of{
       padding-left: 10px;
       padding-top: 5%;
   }
-
+/* this row class creating an error in mobile view
+.row{
+    margin-right: -15px;
+}*/
+#res-img{
+    height:500px;
+}
+#te-card{
+    padding-right: 0;
+}
   /* maintest{
       height: 500px;
       width: max-content;
   } */
-  @media(max-width:480px)
+@media(max-width:480px)
   {
-      .row h1{
-            font-size: x-large;
-        }
-      .row h2{
+    .row h1{
+        font-size: x-large;
+    }
+    .row h2{
         font-size: large;
-        }
+    }
+    #res-img{
+        height: 250px;
+    }
+    .res-heading{
+        font-size: x-large;
+    }
+    #te-card{
+        font-size: small;
+    }
+    .row{
+        margin-right: 0;
+    }
+
   }
