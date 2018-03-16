@@ -2,16 +2,16 @@ html{
     height: fit-content;
 }
 body{
-  background-color: #d5d5e0;
+  background-color: #ffffff;
   height: 100%;
 }
+/* header,nav{
+    margin: 0;
+    padding: 0;
+} */
 
-#main{
-  background-color: #eeeeeebc;
-  margin: 4% 2%;
-  border-radius: 1%;
-  box-shadow: 4px 4px #15151560;
-  height: 100 %;
+ #main{
+  background-color: #ffffff;
 }
 
 /* legal disclaimer & Privacy Policy */
@@ -25,7 +25,6 @@ body{
     font-size: 56px;
     margin:10px auto;
 }
-
 /* horizontal rule */
 hr.style14 { 
     border: 0; 
@@ -47,4 +46,46 @@ hr.style14 {
   h5{
       line-height: 1.8em;
       font-size: large;
+  }
+  h1{
+      text-align: center;
+      font-family: sans-serif;
+  }
+  .about-hr{
+      width: 30%;
+  }
+  h3{
+      font-family: cursive;
+      text-align: center;
+  }
+  .bkgd,.well{
+      background:rgb(255, 255, 255);
+      border: none;
+  }
+  /* .te-img{
+      display: block;
+  }*/
+  #com1{
+      padding-top: 2%;
+  }
+  .sh-card{
+      padding: 2%;
+  }
+  span.name-of{
+      padding-left: 10px;
+      padding-top: 5%;
+  }
+
+  /* maintest{
+      height: 500px;
+      width: max-content;
+  } */
+  @media(max-width:480px)
+  {
+      .row h1{
+            font-size: x-large;
+        }
+      .row h2{
+        font-size: large;
+        }
   }
