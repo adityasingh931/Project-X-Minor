@@ -70,7 +70,10 @@ hr.style14 {
   }
   .sh-card{
       padding: 1%;
-      margin: 2%;
+      margin-top: 2%;
+      margin-right: 0;
+      margin-bottom: 2%;
+      margin-left: 2%;
       background: rgb(221, 238, 243);
       box-shadow: 1px 3px 8px #888888;
       border-radius: 6px;
@@ -86,9 +89,9 @@ hr.style14 {
 #res-img{
     height:500px;
 }
-#te-card{
+/* #te-card{
     padding-right: 0;
-}
+} */
   /* maintest{
       height: 500px;
       width: max-content;
@@ -110,8 +113,4 @@ hr.style14 {
     #te-card{
         font-size: small;
     }
-    .row{
-        margin-right: 0;
-    }
-
   }
