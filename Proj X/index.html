@@ -98,23 +98,95 @@
       </div>
     </div>
 
-    <!-- container for sinup area -->
+    <!-- container for login/SignUp area -->
     <div class="container">
       <div class="row">
         <!-- business user block -->
         <div class="col-md-6">
-          <div class="col1">
-            <p1>Business User</p1>
-          </div>
+          <a data-toggle="modal" href='#modal-id'>
+            <div id="business-user" class="col1">
+              <p1>Business User</p1>
+            </div>
         </div>
+        </a>
         <!-- work user block -->
         <div class="col-md-6">
-            <div class="col2">
-              <p2>Part-time User<p2> 
+          <a data-toggle="modal" href='#modal-id'>
+            <div id="work-user" class="col2">
+              <p2>Part-time User
+                <p2>
             </div>
+        </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- login/signup Popup structure for popping on clicking the div -->
+    <div class="modal fade" id="modal-id">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">
+              <button type="submit" id="login" class="btn btn-info">login</button>
+              <button type="submit" id="signup" class="btn">Sign up</button>
+            </h4>
+          </div> 
+          <!-- popup form -->
+          <div class="modal-body">
+            <form class="px-4 py-3" action="login.php" method="post">
+              <!-- name -->
+              <div class="container hidden">
+                <div class="row">
+                  <div class="name col-md-3">
+                    <div class="form-group name">
+                      <div class="name">
+                        <label for="first-name">First Name</label>
+                        <input type="text" class="form-control" id="first-name" name="firstName" placeholder="First Name" required>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="name col-md-3">
+                    <div class="form-group name">
+                      <div class="name">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" class="form-control" id="last-name" name="lastName" placeholder="Last Name" required>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- email id -->
+              <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="email@example.com" required>
+              </div>
+              <div class="form-group">
+                <!-- password -->
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" name="" placeholder="Password" required>
+              </div>
+              <div class="form-group hidden">
+                <label for="re-enter-password">Re-enter Password</label>
+                <input type="password" class="form-control" id="re-enter-password" name="" placeholder="Re-enter Password" required>
+              </div>
+              <div class="form-check check">
+                <label class="form-check-label" for="checkbox"></label>
+                <input type="checkbox" class="form-check-input" id="checkbox" name="remember" value="checked"> Remember me
+              </div>
+              <button type="submit" id="lgn" class="btn btn-primary">login</button>
+              <button type="submit" class="btn btn-success hidden">Sign up</button>
+            </form>
+
+          </div>
+          <div class="modal-footer">
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Forgot password?</a>
+          </div>
         </div>
       </div>
     </div>
+    <!-- closing of login/signup Popup structure for popping on clicking the div -->
 
     <!-- footer section -->
     <footer>
@@ -144,5 +216,7 @@
   </main>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="programs.js"></script>
 </body>
+
 </html>
