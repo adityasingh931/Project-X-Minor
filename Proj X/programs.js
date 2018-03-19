@@ -31,7 +31,8 @@ function loginView() {
     login.classList.add("btn-info");
     // login.classList.add("active");
     document.querySelector("#lgn").classList.remove("hidden");
-    document.querySelector(".check  ").classList.remove("hidden");
+    document.querySelector(".check").classList.remove("hidden");
+    document.querySelector("a.dropdown-item").classList.remove("hidden");
 }
 
 function signupView() {
@@ -44,4 +45,5 @@ function signupView() {
     // signup.classList.add("active");
     document.querySelector("#lgn").classList.add("hidden");
     document.querySelector(".check").classList.add("hidden");
+    document.querySelector("a.dropdown-item").classList.add("hidden");
 }
