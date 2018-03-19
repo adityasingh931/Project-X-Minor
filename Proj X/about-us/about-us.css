@@ -88,6 +88,7 @@ hr.style14 {
 }*/
 #res-img{
     height:500px;
+    filter: blur(2px);
 }
 #te-card2{
     padding: 0;
@@ -96,6 +97,19 @@ hr.style14 {
   {
     width: 100%;
   }
+.flow-words{
+    z-index: 5;
+    float: left;
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    color: white;
+    animation-name: ex;
+    animation-duration: 4s;
+}
+@keyframes ex{
+    0%{opacity:0; left: 100%; top: 40%}
+}
   /* maintest{
       height: 500px;
       width: max-content;
