@@ -89,9 +89,13 @@ hr.style14 {
 #res-img{
     height:500px;
 }
-/* #te-card{
-    padding-right: 0;
-} */
+#te-card2{
+    padding: 0;
+}
+.comm
+  {
+    width: 100%;
+  }
   /* maintest{
       height: 500px;
       width: max-content;
@@ -110,7 +114,7 @@ hr.style14 {
     .res-heading{
         font-size: x-large;
     }
-    #te-card{
+    #te-card1,#te-card2{
         font-size: small;
     }
   }
