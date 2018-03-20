@@ -10,6 +10,11 @@ body, main{
     padding: 0;
     height:100%;
 }
+/* .services{
+    height:400%;
+    position: relative;
+    background-image:url(""); 
+} */
 
 #col{
 	min-height:80px;
@@ -279,3 +284,19 @@ display: inline;
      width:100%;
  }
 
+ .sect 
+  {
+    height: relative;
+    width: 100%;
+    margin: 0px;
+    background:linear-gradient(#a7d6eb20,#00547a20);
+    padding: 0px;
+  } 
+  .pad-ing{
+      padding: 4%;
+  }
+  /* .back-white{
+      background: radial-gradient(white 1%,white 1%,#2ef11c 98%) ;
+      box-shadow:2px 2px 5px black;
+      border-radius: 10px;
+  } */
