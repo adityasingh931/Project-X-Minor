@@ -59,7 +59,7 @@
                 </button>
                 <div class="dropdown-content">
                   <div class="dropdown-header">Terms of Use</div>
-                  <a href="about-us/legal-disclaimer.html">Legal Disclaimer</a>
+                  <a href="about-us/terms&Condition.html">Terms & Condition</a>
                   <a href="about-us/privacy-policy.html"> Privacy Policy </a>
                   <div class="dropdown-header">Words from our Customers</div>
                   <a href="about-us/testimonials.html">Testimonials</a>
@@ -102,22 +102,38 @@
     <div class="container">
       <div class="row">
         <!-- business user block -->
-        <div class="col-md-6">
+        <div class="col-md-6 lgn-btn">
           <a data-toggle="modal" href='#modal-id'>
             <div id="business-user" class="col1">
-              <p1>Business User</p1>
+              <h4>Business User</h4>
+              <p> Click here to Login/SignUp</p>
             </div>
+          </a>
         </div>
-        </a>
+
         <!-- work user block -->
-        <div class="col-md-6">
+        <div class="col-md-6 lgn-btn">
           <a data-toggle="modal" href='#modal-id'>
             <div id="work-user" class="col2">
-              <p2>Part-time User
-                <p2>
+              <h4>Part-time User</h4>
+              <p> Click here to Login/SignUp</p>
             </div>
+          </a>
         </div>
-        </a>
+      </div>
+      <div class="row">
+        <div class="col-md-6" id="round-text1">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis iusto laudantium optio omnis architecto, doloribus
+            corrupti maxime explicabo. Pariatur illo, provident enim est commodi ab eaque neque fugiat porro perferendis.
+          </p>
+        </div>
+        <div class="col-md-6" id="round-text2">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis iusto laudantium optio omnis architecto, doloribus
+            corrupti maxime explicabo. Pariatur illo, provident enim est commodi ab eaque neque fugiat porro perferendis.
+          </p>
+        </div>
       </div>
     </div>
 
@@ -126,12 +142,22 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h4 class="modal-title">
-              <button type="submit" id="login" class="btn btn-info">login</button>
-              <button type="submit" id="signup" class="btn">Sign up</button>
-            </h4>
-          </div> 
+            <div class="nav-tabs-navigation">
+              <div class="nav-tabs-wrapper">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">
+                  <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+                    <li id="login" class="active">
+                      <a href="#" data-toggle="tab">Login</a>
+                    </li>
+                    <li id="signup" class="active">
+                      <a href="#" data-toggle="tab">SignUp</a>
+                    </li>
+                  </ul>
+                </h4>
+              </div>
+            </div>
+          </div>
           <!-- popup form -->
           <div class="modal-body">
             <form class="px-4 py-3" action="login.php" method="post">
@@ -174,6 +200,12 @@
                 <label class="form-check-label" for="checkbox"></label>
                 <input type="checkbox" class="form-check-input" id="checkbox" name="remember" value="checked"> Remember me
               </div>
+              <div class="form-check check hidden">
+                <label class="form-check-label" for="terms"></label>
+                <input type="checkbox" class="form-check-input" id="terms" name="terms" value="checked"> I agree to the
+                <a href="about-us/terms&Condition.html" target="__new">Terms & Conditions</a> &
+                <a href="about-us/privacy-policy.html" target="__new">Privacy Policy.</a>
+              </div>
               <button type="submit" id="lgn" class="btn btn-primary">login</button>
               <button type="submit" class="btn btn-success hidden">Sign up</button>
             </form>
@@ -187,6 +219,7 @@
       </div>
     </div>
     <!-- closing of login/signup Popup structure for popping on clicking the div -->
+    
     <!-- Services Section -->
     <div class="container sect" id="services" >
       <div class="row">
