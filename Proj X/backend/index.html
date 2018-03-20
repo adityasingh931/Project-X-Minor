@@ -10,7 +10,7 @@
 <body>
 
     <!-- navbar -->
-    <nav class="navbar navbar-inverse">
+    <nav class="navbar">
         <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -20,7 +20,7 @@
       </button>
      
          
-      <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-th-list"></span></a>
+      <a class="navbar-brand" href="#"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
@@ -29,8 +29,11 @@
         <li><a href="#">Projects</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      <ul class="nav navbar-nav navbar-right avt">
+        <!-- <li><a href="#">
+          <span class="glyphicon glyphicon-plus-sign "></span></a></li>> -->
+          <li><a href="#"> <img src="images2/avtar.png" alt="Avatar" class="avatar">
+        </a></li>
       </ul>
     </div>
   </div>
@@ -41,13 +44,41 @@
     <a href="#"> <span class="glyphicon glyphicon-user"></span></a>
     <a href="#"> <span class="glyphicon glyphicon-user"></span></a>
     <a href="#"> <span class="glyphicon glyphicon-user"></span></a>
+    
 
+  </div>
+  <!-- side-bar2 -->
+  <div id="mySidenav" class="sidenav-2">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    
+  </div>
+  <!-- main -->
+  <div id="main">
+    <h2> &nbsp &nbsp &nbsp &nbsp &nbsp My first Dropdownbox</h2>
+    <p> &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp  &nbspcreated by Aditya singh abhijeet ****** butkj alj hlas halhf hlhfdub hkl afffaugaityad aduyts .</p>
+    
   </div>
 <!-- footer -->
 <footer class="container-fluid text-center">
   <p>Footer Text</p>
 </footer>
-
+<!-- side-bar 2 -->
+<script>
+  function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+      document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  }
+  
+  function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+      document.body.style.backgroundColor = "white";
+  }
+  </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
