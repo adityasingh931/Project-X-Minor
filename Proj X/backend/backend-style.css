@@ -2,9 +2,12 @@
   .navbar {
     margin-bottom: 0;
     border-radius: 0;
+    box-shadow:0px 3px 10px 1px #555;
   }
   
- 
+ .navbar a{
+    color: black;
+ }
   
   /* Set black background color, white text and some padding */
   footer {
@@ -22,15 +25,14 @@
   /* side-bar */
   .sidenav {
     height: 100%;
-    width: 50px;
+    width: 56px;
     position: fixed;
-    z-index: -1;
-    top: 0;
+    z-index: 2;
+    top: 52px;
     left: 0;
-    background-color: #111;
+    background-color: #333;
     overflow-x: hidden;
-    padding-top: 20px;
-    margin-top: 52px;
+   
 }
 
 .sidenav a {
@@ -39,6 +41,7 @@
     font-size: 25px;
     color: #818181;
     display: block;
+    margin-top: 20%;
 }
 
 .sidenav a:hover {
@@ -55,4 +58,64 @@
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
 }
+/* side-bar2 */
+.sidenav-2 {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
 
+.sidenav-2 a {
+    padding: 8px 8px 18px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    margin-left: 15%;
+}
+
+.sidenav-2 a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav-2 .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav-2 {padding-top: 15px;}
+  .sidenav-2 a {font-size: 18px;}
+ 
+}
+/* avtar */
+.avatar {
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.avt>li>a {
+    padding-top: 5px;
+    padding-bottom: 0px;
+}
+.avt>li>a :hover{
+background-color:transparent;
+color: #ffff;
+}
