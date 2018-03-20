@@ -5,17 +5,11 @@ html {
 }
 
 body, main{
-    background-color: #f8f6f9db;
+    background-color: #ffffff;
     margin: 0;
     padding: 0;
     height:100%;
 }
-/* .services{
-    height:400%;
-    position: relative;
-    background-image:url(""); 
-} */
-
 #col{
 	min-height:80px;
 	width:100px;
@@ -94,12 +88,12 @@ body, main{
 #footer {
     position:relative;
     bottom:inherit;	
-    background-color: #222222;
+    background-color: #222222d0;
     margin:0px;
     height: 60px;
     clear:both;
     border-radius: 5px;
-    color: #efe5d0;
+    color: #ffffff;
     text-align: center;
     padding:0px;
     font-size: 90%;
@@ -123,13 +117,13 @@ display: inline;
     text-decoration: none;
     font-family:Arial;
     padding: .2em 1em;
-    color: #efe5d0;
-    background-color: #3333;
+    color: #ffffff;
+    background-color: rgba(51, 51, 51, 0);
 }
  
 #footer ul li a:hover {
-    color: #080808;
-    background-color: #222;
+    color: #000000;
+    background-color: rgb(255, 255, 255);
 } 
 
 /* contact us */
@@ -184,7 +178,7 @@ display: inline;
     background-image: url("images/deliveryboy.jpg");
 
     /* Set a specific height */
-    height: 90%;
+    height: 100%;
 
     /* Position and center the image to scale nicely on all screens */
     background-position: center;
@@ -248,8 +242,8 @@ display: inline;
     text-align:center; 
     background-color: #222222;
     background-repeat: repeat;
-    border-radius: 25px;
-    box-shadow:5px 5px 15px 10px #9d9d9d;
+    border-radius: 10px;
+    box-shadow:3px 3px 16px 3px #5a5a5a;
   }
  
   .lgn-btn a:hover, .lgn-btn a:active, .lgn-btn a:visited, .lgn-btn a:link {
@@ -276,14 +270,15 @@ display: inline;
       top: 57%;
   }
 
-  #round-text1 P, #round-text2 p{
-    padding: 2%;   
-    border-radius: 5%;
+  #round-text1 div, #round-text2 div{
+    padding: 3%;
     margin:30px 30px 30px 30px;
-    text-align:center; 
-    background-color: #d8d8d8;
+    text-align:center;
+    font-size: 18px;
+    color: snow; 
+    background:#056c7e ;
     background-repeat: repeat;
-    border-radius: 25px;
+    border-radius: 8px;
 }
 
 
@@ -303,13 +298,13 @@ display: inline;
  .name input{
      width:100%;
  }
-
+/* Services CSS */
  .sect 
   {
     height: relative;
     width: 100%;
     margin: 0px;
-    background:linear-gradient(#a7d6eb20,#00547a20);
+    background:#b0b2b4af;
     padding: 0px;
   } 
   .pad-ing{
