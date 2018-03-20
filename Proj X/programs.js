@@ -27,8 +27,8 @@ function loginView() {
         hidden[i].classList.add("hidden");
     }
     // signup.classList.remove("active");
-    signup.classList.remove("btn-info");
-    login.classList.add("btn-info");
+    // signup.classList.remove("btn-info");
+    // login.classList.add("btn-info");
     // login.classList.add("active");
     document.querySelector("#lgn").classList.remove("hidden");
     document.querySelector(".check").classList.remove("hidden");
@@ -40,8 +40,8 @@ function signupView() {
         hidden[i].classList.remove("hidden");
     }
     // login.classList.remove("inactive");
-    login.classList.remove("btn-info");
-    signup.classList.add("btn-info");
+    // login.classList.remove("btn-info");
+    // signup.classList.add("btn-info");
     // signup.classList.add("active");
     document.querySelector("#lgn").classList.add("hidden");
     document.querySelector(".check").classList.add("hidden");
