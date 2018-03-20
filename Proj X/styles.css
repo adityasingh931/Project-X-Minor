@@ -5,12 +5,11 @@ html {
 }
 
 body, main{
-    background-color: #f8f6f9db;
+    background-color: #ffffff;
     margin: 0;
     padding: 0;
     height:100%;
 }
-
 #col{
 	min-height:80px;
 	width:100px;
