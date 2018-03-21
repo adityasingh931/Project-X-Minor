@@ -24,7 +24,7 @@
 
   /* side-bar */
   .sidenav {
-    height: 100%;
+    height: 501px;
     width: 56px;
     position: fixed;
     z-index: 2;
@@ -73,7 +73,7 @@
 }
 
 .sidenav-2 a {
-    padding: 8px 8px 18px 32px;
+    padding: 8px 8px 16px 32px;
     text-decoration: none;
     font-size: 25px;
     color: #818181;
@@ -112,10 +112,51 @@
     border-radius: 50%;
 }
 .avt>li>a {
-    padding-top: 5px;
-    padding-bottom: 0px;
+    padding: 5px 0px 0px 0px;
+    margin: 0px 10px 0px 10px;
 }
-.avt>li>a :hover{
-background-color:transparent;
-color: #ffff;
+
+.avt>li>a:hover{
+    background-color: transparent;
+}
+/* profile */
+.sidenav-3 {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align:center;
+}
+
+ .sidenav-3 a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+
+}
+
+.sidenav-3 a:hover{
+    color: #f1f1f1;
+}
+
+.sidenav-3 .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav-3 {padding-top: 15px;}
+  .sidenav-3 a {font-size: 18px;}
 }
