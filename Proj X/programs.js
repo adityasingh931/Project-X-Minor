@@ -26,22 +26,24 @@ function loginView() {
     for (var i = 0; i < hidden.length; i++) {
         hidden[i].classList.add("hidden");
     }
-    // signup.classList.remove("active");
-    signup.classList.remove("btn-info");
-    login.classList.add("btn-info");
-    // login.classList.add("active");
     document.querySelector("#lgn").classList.remove("hidden");
-    document.querySelector(".check  ").classList.remove("hidden");
+    document.querySelector(".check").classList.remove("hidden");
+    document.querySelector("a.dropdown-item").classList.remove("hidden");
+    login.classList.add("active");
+    signup.classList.remove("active");
+    login.style.color="blue";
+    signup.style.color="grey";
 }
 
 function signupView() {
     for (var i = 0; i < hidden.length; i++) {
         hidden[i].classList.remove("hidden");
     }
-    // login.classList.remove("inactive");
-    login.classList.remove("btn-info");
-    signup.classList.add("btn-info");
-    // signup.classList.add("active");
     document.querySelector("#lgn").classList.add("hidden");
     document.querySelector(".check").classList.add("hidden");
+    document.querySelector("a.dropdown-item").classList.add("hidden");
+    signup.style.color="blue";
+    login.style.color="grey";
+    signup.classList.add("active");
+    login.classList.remove("active");
 }
