@@ -12,58 +12,7 @@
 <body>
 
   <!-- navbar -->
-  <nav class="navbar">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
 
-
-        <a class="navbar-brand" href="#">
-          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-        </a>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li class="active">
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">Projects</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right avt">
-          <li>
-            <a href="#">
-              <img src="images2/add.png" alt="Add account" title="add acount" class="avatar">
-
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="images2/question3.png" alt="support centre" title="support centre" class="avatar">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span style="font-size:30px;cursor:pointer" onclick="openNav1()">
-                <img src="images2/avtar.png" alt="Profile" title="profile" class="avatar">
-              </span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
 
   <!-- side-bar
   <div class="sidenav">
@@ -77,26 +26,33 @@
   <!-- side-bar2 -->
   <div id="mySidenav" class="sidenav-2">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    
+
     <div class="container-fluid">
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 sidenavimg">
           <img src="images2/background.jpg" height="100%" width="100%" alt="Avatar">
-         
-          
-          
+
+
+
         </div>
       </div>
-      
+
     </div>
     <br>
-    <a href="#"><span class="glyphicon glyphicon-new-window"></span>&nbsp New Booking</a>
+    <a href="#">
+      <span class="glyphicon glyphicon-new-window"></span>&nbsp New Booking</a>
     <a href="#">My Tansections</a>
-    <a href="#"><i class="glyphicon glyphicon-remove"></i>&nbsp Cancle </a>
-    <div id="more"><a><i class="glyphicon glyphicon-option-vertical"></i>&nbsp More</a> </div>
-    <a href="#"><i class="glyphicon glyphicon-lock"></i>&nbsp logout</a>
+    <a href="#">
+      <i class="glyphicon glyphicon-remove"></i>&nbsp Cancle </a>
+    <div id="butmore" class="more">
+      <a>
+        <i class="glyphicon glyphicon-option-vertical"></i>&nbsp More</a>
+      <a href="#" class="more1">&nbsp settings</a>
+    </div>
+    <a href="#">
+      <i class="glyphicon glyphicon-lock"></i>&nbsp logout</a>
 
-    
+
 
   </div>
   <!-- side-bar 3 -->
@@ -116,6 +72,59 @@
 
   <!-- main -->
   <div id="main">
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+
+          <a id="brand" class="navbar-brand" href="#">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active">
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Projects</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right avt">
+            <li>
+              <a href="#">
+                <img src="images2/add.png" alt="Add account" title="add acount" class="avatar">
+
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images2/question3.png" alt="support centre" title="support centre" class="avatar">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span style="font-size:30px;cursor:pointer" onclick="openNav1()">
+                  <img src="images2/avtar.png" alt="Profile" title="profile" class="avatar">
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <!-- jumbotron -->
     <div class="jumbotron">
       <div class="container text-center">
@@ -143,17 +152,19 @@
 
           <img src="images2/deliveryboy.jpg" height="100%" width="100%" alt="Avatar">
 
-        </div>
+        </div>'""'
       </div>
     </div>
-    
+
+    <!-- footer -->
+    <footer class="container-fluid text-center">
+      <p>Footer Text</p>
+    </footer>
   </div>
 
-  <!-- footer -->
-  <footer class="container-fluid text-center">
-    <p>Footer Text</p>
-  </footer>
   <!-- side-bar 2 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
   <script>
     function openNav() {
       document.getElementById("mySidenav").style.width = "250px";
@@ -175,8 +186,17 @@
     function closeNav1() {
       document.getElementById("mySidenav2").style.width = "0";
     }
+
+    $(document).ready(function () {
+      $("#butmore").click(function () {
+
+        $("div.more").toggleClass("more2");
+        $(".more1").toggleClass("more3");
+
+      });
+      
+    });
   </script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 
