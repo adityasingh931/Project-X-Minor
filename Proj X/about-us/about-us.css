@@ -104,66 +104,7 @@ hr.style14 {
     top: 40%;
     left: 35%;
     color: white;
-    animation-name: ex;
-    animation-duration: 3s;
 }
-div .flow-words{
-    position: absolute;
-    width: auto;
-    margin: 0;
-    text-align: center;
-    white-space:nowrap;
-
-      /* Starting position */
-  
-  -moz-transform: translateX(100%);
-  -webkit-transform: translateX(100%);
-  transform: translateX(100%);
-  /* Apply animation to this element */
-  
-  -moz-animation: flow-words 10s linear infinite;
-  -webkit-animation: flow-words 10s linear infinite;
-  animation: flow-words 10s linear infinite;
-}
-
-@-moz-keyframes flow-words {
-    0% {
-      -moz-transform: translateX(100%);
-    }
-    100% {
-      -moz-transform: translateX(-100%);
-    }
-  }
-  
-  @-webkit-keyframes flow-words {
-    0% {
-      -webkit-transform: translateX(100%);
-    }
-    100% {
-      -webkit-transform: translateX(-100%);
-    }
-  }
-  
-  @keyframes flow-words {
-    0% {
-      -moz-transform: translateX(100%);
-      /* Browser bug fix */
-      
-      -webkit-transform: translateX(100%);
-      /* Browser bug fix */
-      
-      transform: translateX(200%);
-    }
-    100% {
-      -moz-transform: translateX(-100%);
-      /* Browser bug fix */
-      
-      -webkit-transform: translateX(-100%);
-      /* Browser bug fix */
-      
-      transform: translateX(-100%);
-    }
-  }
   /* maintest{
       height: 500px;
       width: max-content;
