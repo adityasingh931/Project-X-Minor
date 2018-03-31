@@ -87,8 +87,8 @@ hr.style14 {
     margin-right: -15px;
 }*/
 #res-img{
-    height:500px;
-    filter: blur(2px);
+    height:80vh;
+    width: 100%;
 }
 #te-card2{
     padding: 0;
@@ -118,7 +118,7 @@ hr.style14 {
         font-size: large;
     }
     #res-img{
-        height: 250px;
+        height: 300px;
     }
     .res-heading{
         font-size: x-large;
