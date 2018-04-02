@@ -79,24 +79,24 @@
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #333;
+    background-color: #fff;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
+    padding-top: 0px;
 }
 
 .sidenav-2 a {
     padding: 8px 8px 16px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color:#818181;
     display: block;
     transition: 0.3s;
-    margin-left: 15%;
+    margin-left: 2px;
 }
 
 .sidenav-2 a:hover {
-    color: #f1f1f1;
+    color: #2b2a2a;
 }
 
 .sidenav-2 .closebtn {
@@ -110,6 +110,37 @@
 #main {
     transition: margin-left .5s;
     
+}
+.sidenavimg{
+    height:30%;
+    z-index: -1;
+    padding-left: 0px;
+    padding-right:0px;
+    }
+.sidePhoto{
+    top: 0;
+    z-index: 1;
+    width:20%;
+    height: 20%;
+   
+}
+
+#more {
+    
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    -webkit-transition: height 3s; /* For Safari 3.1 to 6.0 */
+    transition: height 2s;
+    box-shadow:1px 0px 0px 1px black;
+
+
+}
+#more a:hover{
+cursor: pointer;
+}
+#moreclick{
+    box-shadow:1px 0px 0px 1px black;    
 }
 
 @media screen and (max-height: 450px) {
