@@ -18,13 +18,15 @@ body,html{
 }
 
 /* Section one */
-div.section-one p{
-    padding: 4% 7%;
-    margin: 0;
-    font-weight: 300;
+div.section-one .weight{
+    padding:2%;
+    margin: 5% auto;
+    font-size: 20px;
     /* class display and weight should be remove in mobile devices */
+    word-spacing: 10px;
+    line-height: 120%
 }
-div.section-one h1,div.section-one h6{
+div.section-one h1,div.section-one h2{
     line-height: 90%;
 }
 
@@ -33,6 +35,9 @@ div.services-section{
     background: lightgray;
     padding: 2%;
     font-size: 1.2em;
+}
+div.services-section h2{
+    font-weight: 300;
 }
 div.services-section span{
     border-bottom: 2px solid #000;
@@ -56,7 +61,9 @@ div.testimonials{
     background: rgba(0, 0, 0, 0.781);
     color: white;
     padding: 2%;
-    font-size: 1.2em;
+}
+div.testimonials h1{
+    font-size: 3rem;
 }
 div.testimonials img{
     display: block;
@@ -72,6 +79,9 @@ transition: 0.5s;
 .testimonials .margin-row .col-padding:hover{
     background: rgba(255, 255, 255, 0.89);
     color: black;
+}
+div.testimonials p{
+    font-size: 1.18rem;
 }
 div.testimonials img:hover{
     box-shadow: 2px 4px 6px 0 rgba(0, 0, 0, 0.5);
