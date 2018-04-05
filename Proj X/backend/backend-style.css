@@ -1,58 +1,252 @@
-  /* Remove the navbar's default margin-bottom and rounded borders */ 
-  .navbar {
-    margin-bottom: 0;
-    border-radius: 0;
-  }
-  
- 
-  
-  /* Set black background color, white text and some padding */
-  footer {
-    background-color: #555;
-    color: white;
-    padding: 15px;
-    bottom: 0;
-    position: absolute;
-    width:100%;
-    margin-left: 100px;
-  }
-  
+ .jumbotron {
+     margin-bottom: 0px;
+     background: linear-gradient(to right, rgb(241, 241, 241), rgb(199, 199, 185));
+ }
+
+ /* Remove the navbar's default margin-bottom and rounded borders */
+
+ .navbar {
+     top: 0px;
+     left: 0px;
+     right: 0px;
+     margin-bottom: 0;
+     border-radius: 0;
+     box-shadow: 0px 3px 10px 1px #555;
+     background-color: #fff;
+     z-index: 1;
+ }
+
+ .navbar a {
+     color: black;
+ }
+
+ .navbar-toggle {
+     background-image: url("images2/hamb2.png")
+ }
 
 
-  /* side-bar */
-  .sidenav {
-    height: 100%;
-    width: 50px;
-    position: fixed;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    padding-top: 20px;
-    margin-top: 52px;
-}
 
-.sidenav a {
-    padding: 6px 8px 6px 12px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-}
 
-.sidenav a:hover {
-    color: #f1f1f1;
-}
+ /* Set black background color, white text and some padding */
 
-.main {
-    margin-left: 160px; /* Same as the width of the sidenav */
-    font-size: 28px; /* Increased text to enable scrolling */
-    padding: 0px 10px;
-}
+ footer {
+     position: absolute;
+     background-color: #555;
+     color: white;
+     padding: 15px;
+     bottom: 0px;
+     position: relative;
+     width: 100%;
+     margin-left: 100px;
+ }
 
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-}
+ /* side-bar */
 
+ .sidenav {
+     height: 501px;
+     width: 56px;
+     position: fixed;
+     z-index: 2;
+     top: 52px;
+     left: 0;
+     background-color: #333;
+     overflow-x: hidden;
+ }
+
+ .sidenav a {
+     padding: 6px 8px 6px 12px;
+     text-decoration: none;
+     font-size: 25px;
+     color: #818181;
+     display: block;
+     margin-top: 20%;
+ }
+
+ .sidenav a:hover {
+     color: #f1f1f1;
+ }
+
+ .main {
+     margin-left: 160px;
+     /* Same as the width of the sidenav */
+     font-size: 28px;
+     /* Increased text to enable scrolling */
+     padding: 0px 10px;
+ }
+
+ @media screen and (max-height: 450px) {
+     .sidenav {
+         padding-top: 15px;
+     }
+     .sidenav a {
+         font-size: 18px;
+     }
+ }
+
+ /* side-bar2 */
+
+ .sidenav-2 {
+     height: 100%;
+     width: 0;
+     position: fixed;
+     z-index: 1;
+     top: 0;
+     left: 0;
+     background-color: #fff;
+     overflow-x: hidden;
+     transition: 0.5s;
+     padding-top: 0px;
+ }
+
+ .sidenav-2 a {
+     padding: 8px 8px 16px 32px;
+     text-decoration: none;
+     font-size: 25px;
+     color: #818181;
+     display: block;
+     transition: 0.3s;
+     margin-left: 2px;
+ }
+
+ .sidenav-2 a:hover {
+     color: #f1f1f1;
+ }
+
+ .sidenav-2 .closebtn {
+     position: absolute;
+     top: 0;
+     right: 25px;
+     font-size: 36px;
+     margin-left: 50px;
+ }
+
+ #main {
+     transition: margin-left .5s;
+ }
+
+ .sidenavimg {
+     height: 30%;
+     z-index: -1;
+     padding-left: 0px;
+     padding-right: 0px;
+ }
+
+ .sidePhoto {
+     top: 0;
+     z-index: 1;
+     width: 20%;
+     height: 20%;
+ }
+
+ .more {
+     width: 100%;
+     height: 50px;
+     background: #fff;
+     -webkit-transition: height 1s;
+     /* For Safari 3.1 to 6.0 */
+     transition: height 1s;
+     box-shadow: 1px 0px 0px 1px black;
+ }
+
+ .more2 {
+     height: 200px;
+ }
+
+ .more1 {
+     visibility: collapse;
+ }
+
+ .more3 {
+     visibility: visible;
+ }
+
+ /* avtar */
+
+ .avatar {
+     vertical-align: middle;
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+ }
+
+ .avt>li>a {
+     padding: 5px 0px 0px 0px;
+     margin: 0px 10px 0px 10px;
+ }
+
+ .avt>li>a:hover {
+     background-color: transparent;
+ }
+
+ /* profile */
+
+ .sidenav-3 {
+     height: 100%;
+     width: 0;
+     position: fixed;
+     z-index: 3;
+     top: 0;
+     right: 0;
+     background-color: #111;
+     overflow-x: hidden;
+     transition: 0.5s;
+     padding-top: 60px;
+     text-align: center;
+ }
+
+ .sidenav-3 a {
+     padding: 8px 8px 8px 32px;
+     text-decoration: none;
+     font-size: 25px;
+     color: #818181;
+     display: block;
+     transition: 0.3s;
+ }
+
+ .sidenav-3 a:hover {
+     color: #f1f1f1;
+ }
+
+ .sidenav-3 .closebtn {
+     position: absolute;
+     top: 0;
+     right: 25px;
+     font-size: 36px;
+     margin-left: 50px;
+ }
+
+ @media screen and (max-height: 450px) {
+     .sidenav-3 {
+         padding-top: 15px;
+     }
+     .sidenav-3 a {
+         font-size: 18px;
+     }
+ }
+
+ .proPhoto {
+     float: middle;
+     width: 20%;
+     position: relative;
+     border-radius: 50%;
+ }
+
+ /* background image */
+
+ .well {
+     position: fixed;
+     padding: 0px;
+     margin: 0px;
+     z-index: -1;
+     left: 0px;
+     top: 10%;
+ }
+
+ .well2 {
+     width: 100%;
+     height: 100%;
+     padding: 0px;
+     margin-top: 65%;
+     left: 0;
+     right: 0;
+ }
