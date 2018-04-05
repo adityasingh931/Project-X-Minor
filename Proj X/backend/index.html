@@ -13,7 +13,6 @@
   <!-- side-bar2 -->
   <div id="mySidenav" class="sidenav-2">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
     <div class="container-fluid">
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 sidenavimg">
@@ -27,16 +26,21 @@
     <a href="#">My Tansections</a>
     <a href="#">
       <i class="glyphicon glyphicon-remove"></i>&nbsp Cancle </a>
-    <div id="butmore" class="more">
+    <div id="more">
       <a>
         <i class="glyphicon glyphicon-option-vertical"></i>&nbsp More</a>
-      <a href="#" class="more1">&nbsp settings</a>
+    </div>
+    <div id="moreclick">
+      <a href="">
+        <span class="glyphicon glyphicon-wrench"></span>&nbsp settings</a>
+      <a href="">
+        <span class="glyphicon glyphicon-briefcase"></span>&nbsp about us</a>
     </div>
     <a href="#">
       <i class="glyphicon glyphicon-lock"></i>&nbsp logout</a>
   </div>
   <!-- side-bar 3 -->
-  <div id="mySidenav2" class="sidenav-3">
+  <!-- <div id="mySidenav2" class="sidenav-3">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
     <a href="#">
       <img src="images2/avtar2.jfif" alt="Profile Picture" title="" class="proPhoto">
@@ -113,9 +117,6 @@
         </div>
       </div>
     </div>
-    <!-- <h2> &nbsp &nbsp &nbsp &nbsp &nbsp My first Dashboard</h2>
-    <p> &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp  &nbspcreated by Aditya singh abhijeet ****** butkj alj hlas halhf hlhfdub hkl afffaugaityad aduyts .</p> -->
-
     <div class="container-fluid text-center">
       <div class="row">
         <div class="col-md-12 col-xs-12 well2">
@@ -130,10 +131,9 @@
     </footer>
   </div>
 
-  <!-- side-bar 2 -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
   <script>
+    // side-bar 2
     function openNav() {
       document.getElementById("mySidenav").style.width = "250px";
       document.getElementById("main").style.marginLeft = "250px";
@@ -144,7 +144,6 @@
       document.getElementById("mySidenav").style.width = "0";
       document.getElementById("main").style.marginLeft = "0";
       document.body.style.backgroundColor = "white";
-
     }
     // profile
     function openNav1() {
@@ -155,14 +154,12 @@
       document.getElementById("mySidenav2").style.width = "0";
     }
 
+    // more option in sidenav2
     $(document).ready(function () {
-      $("#butmore").click(function () {
-
-        $("div.more").toggleClass("more2");
-        $(".more1").toggleClass("more3");
-
+      $("#moreclick").slideUp();
+      $("#more").click(function () {
+        $("#moreclick").slideToggle();
       });
-
     });
   </script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
