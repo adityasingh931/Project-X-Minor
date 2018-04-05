@@ -100,6 +100,67 @@ hr.style14 {
       height: 500px;
       width: max-content;
   } */
+
+  /* About section with parallax */
+.parallax-img{
+    position: relative;
+    font-family: Advent Pro;
+    background-image: url('../images/pex.jpeg');
+    min-height: 100%;
+    opacity: 0.80;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* This will create parallax effect */
+    background-attachment: fixed;
+}
+#about{
+    color: black;
+    /* this creating a problem
+    line-height: inherit; */
+}
+.about-background{
+    background-color: #0000008e;
+    color: rgb(255, 255, 255);
+    line-height: 200%;
+    padding: 2%;
+    margin: 2% auto;
+    border-radius: 7px;
+}
+.about-info{
+    padding: 3% 4% 0 4%;
+}
+.leader-background{
+    background-color:  #0000008e;
+    color: rgb(255, 255, 255);
+    line-height: 200%;
+    padding: 2%;
+    border-radius: 7px;
+}
+.leader-background img{
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+.leader-background .text-padding{
+    padding: 2%;
+}
+.display-2{
+    font-size: 7.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+.display-3{
+    font-size: 6.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+.display-4 {
+    font-size: 5.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
 @media(max-width:480px)
   {
     .row h1{
