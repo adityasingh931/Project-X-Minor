@@ -13,6 +13,15 @@ body{
  #main{
   background-color: #ffffff;
 }
+.navbar{
+    margin-bottom: 0;
+    border: 0;
+    padding-top: 1.5%;
+    background-color: #39458b;
+    border-radius:0;
+    box-shadow: 1px 1px 8px grey; 
+    height: 7.8rem;
+}
 
 /* Terrms-n-Condition & Privacy Policy */
 
@@ -104,8 +113,8 @@ hr.style14 {
   /* About section with parallax */
 .parallax-img{
     position: relative;
-    font-family: Advent Pro;
-    background-image: url('../images/pex.jpeg');
+    font-family: "Tajawal";
+    background-image: url('../images/pexels.jpeg');
     min-height: 100%;
     opacity: 0.80;
     background-position: center;
@@ -113,50 +122,69 @@ hr.style14 {
     background-repeat: no-repeat;
     /* This will create parallax effect */
     background-attachment: fixed;
+    letter-spacing: .0001cm;
+    font-weight: 300;
+    color: rgb(230, 230, 230);
 }
 #about{
     color: black;
     /* this creating a problem
     line-height: inherit; */
 }
+/* #about div{
+    margin-top: 20%;
+} */
+#about .bkgn{
+    background-color: rgba(255, 255, 255, 0.514);
+    border: 1px solid black;
+}
 .about-background{
-    background-color: #0000008e;
-    color: rgb(255, 255, 255);
+    background-color: #39458bbe;
     line-height: 200%;
     padding: 2%;
-    margin: 2% auto;
-    border-radius: 7px;
+    margin: 6% auto;
 }
 .about-info{
     padding: 3% 4% 0 4%;
+    font-size: 1.8rem;
+    font-weight: 300;
 }
 .leader-background{
-    background-color:  #0000008e;
-    color: rgb(255, 255, 255);
+    background-color:  #293264be;
     line-height: 200%;
     padding: 2%;
-    border-radius: 7px;
 }
 .leader-background img{
     display: block;
     margin: auto;
     margin-bottom: 2rem;
 }
-.leader-background .text-padding{
-    padding: 2%;
+.leader-background .text-padding {
+    padding: 2.5%;
+    font-size: large;
+}
+.leader-background h3{
+    font-family: "Tajawal";
+    font-size: 3.2rem;
+}
+.leader-background .margin-row{
+    margin-top: 2%;
+}
+.leader-background .text-uppercase{
+    font-size: large;
 }
 .display-2{
-    font-size: 7.5rem;
+    font-size: 9.5rem;
     font-weight: 300;
     line-height: 1.2;
 }
 .display-3{
-    font-size: 6.5rem;
+    font-size: 7.5rem;
     font-weight: 300;
     line-height: 1.2;
 }
 .display-4 {
-    font-size: 5.5rem;
+    font-size: 6.5rem;
     font-weight: 300;
     line-height: 1.2;
 }
