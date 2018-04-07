@@ -127,51 +127,10 @@ display: inline;
 } 
 
 /* contact us */
-.form-required{
-    color: rgb(255, 19, 19);
-    font-size:16px;
+.form-box{
+    height:50%;
+    background-color: red;
 }
-
-.form-data{
-    margin: 1% 700px 1% 50px;
-    padding: 1% 2%;
-    background-color: #dcdaffee;
-    border-radius: 2%;
-}
-
-.form-data h2{
-    line-height: 1%;
-}
-
-.form-data p {
-    margin-left: 8  px;
-}
-
-@media(max-width:750px){
-    .form-data{
-        margin: 50px 75px;
-        padding: 1% 2%;
-        background-color: #dcdaffee;
-        border-radius: 2%;
-    }
-}
- /* map embeding on contact us page */
-#map{
-    height: 60rem;
-    width: 42%;
-    display:inline;
-    margin: 1rem 2em;
-    float: right;
-}
-
-.contact-details{
-    background-color: #f0f0f0;
-    margin: 50px 500px 50px 4%;
-    padding:20px;
-    width: 50%;
-    border-radius:10px;
-}
-
 /* The hero image */
 .hero-image {
     /* The image used */

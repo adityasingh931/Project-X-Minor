@@ -93,8 +93,9 @@
 
 	<!-- main body section -->
 	<main id="main">
-		<!-- google map of office address -->
-		<!-- <script type="text/javascript">
+
+		<!--  Using google map, added office address -->
+		<script type="text/javascript">
 			function initMap() {
 				var location = { lat: 23.250115, lng: 77.522173 };
 				var map = new google.maps.Map(document.getElementById("map"), {
@@ -107,94 +108,37 @@
 					map: map
 				});
 			}
-		</script> -->
-
-		<div id="map"></div>
+		</script>
 
 		<!-- Form Box -->
-		<div class="container form-data">
+
+		<div class="container">
+
 			<div class="row">
-				<div class="col-md-3">
-						<h2>
-								<strong>Send us a message:-</strong>
-							</h2>
-							<p>
-								<em>We would love to hear from you.</em>
-							</p>
-							<!-- Form & Table -->
-							<table>
-								<form action="" method=post>
-									<tbody>
-										<tr>
-											<div class="form-group">
-												<td>
-													<label for="name">Enter Full Name
-														<span class="form-required">*</span>
-													</label>
-												</td>
-												<td>
-													<input id="name" class="form-control" type="text" name="name" placeholder="Full Name" required />
-												</td>
-											</div>
-										</tr>
-										<tr>
-											<td>
-												<label for="email">Enter Email
-													<span class="form-required">*</span>
-												</label>
-											</td>
-											<td>
-												<input id="email" class="form-control" type="email" name="email" placeholder="Email" required />
-											</td>
-										</tr>
-										<tr>
-											<div class="form-group">
-												<td>
-													<label for="mobile">Enter Mobile No.
-														<span class="form-required">*</span>
-													</label>
-												</td>
-												<td>
-													<div class="input-group">
-														<div class="input-group-addon">+91</div>
-														<input type="number" class="form-control" id="mobile" placeholder="Mobile Number" pattern="[0-9]{5}[-][0-9]{7}[-][0-9]{1}">
-													</div>
-											</div>
-											</td>
-										</tr>
-										<tr>
-											<td>
-												<label for="message">Enter your Message
-													<span class="form-required">*</span>
-												</label>
-											</td>
-											<td>
-												<textarea id="message" class="form-control" rows="3" required></textarea>
-											</td>
-										</tr>
-										<tr>
-											<td>
-												<input class="btn btn-primary" type="submit" value="Send Message">
-											</td>
-										</tr>
-									</tbody>
-								</form>
-							</table>
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 form-box ">
+
 				</div>
-			</div>	
+				<!-- address details for the office -->
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6  form-box contact-details">
+
+					<div id="map"></div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-box">
+						<h3>Find Us at :-</h3>
+						<label for="address">Address:-</label>
+						<p id="address"> LNCTE Campus, Raisen Road
+							<br> Bhopal, M.P.</p>
+						<label for="phone">Phone:-</label>
+						<p id="phone"> +919876543210</p>
+						<label for="contact-mail">Our Email Id:</label>
+						<a id="contact-mail" href="mailto:contact@xyz.com">contact@xyz.com</a>
+				</div>
+			</div>
 		</div>
 
-		<!-- address details for the office -->
-		<div class="container contact-details">
-			<h3>Find Us at :-</h3>
-			<label for="address">Address:-</label>
-			<p id="address"> LNCTE Campus, Raisen Road
-				<br> Bhopal, M.P.</p>
-			<label for="phone">Phone:-</label>
-			<p id="phone"> +919876543210</p>
-			<label for="contact-mail">Our Email Id:</label>
-			<a id="contact-mail" href="mailto:contact@xyz.com">contact@xyz.com</a>
-		</div>
 	</main>
 
 	<!-- footer section -->
