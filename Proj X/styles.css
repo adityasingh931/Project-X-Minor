@@ -300,3 +300,68 @@ body, main{
       box-shadow:2px 2px 5px black;
       border-radius: 10px;
   } */
+
+  /* Services CSS */
+
+#services {
+    font-size: 1.3em;
+    font-weight: 400;
+    line-height: 1.6em;
+    font-family: "Arima Madurai";
+    text-overflow: ellipsis;
+    width:100%;
+}
+
+.sect {
+    height: relative;
+    width: 100%;
+    margin: 0px;
+    background: #d8d8d8;
+    color:black;
+}
+
+.pad-ing {
+    padding: 4%;
+}
+.service-heading div h2 {
+    margin-top: 3%;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 3em;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 2px 4px 6px 0 rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+    border-radius: 5px;
+    margin: 0.1em 5em 2em 6em;
+    background: white;
+    color: rgb(0, 0, 0);
+}
+
+/* On mouse-over, add a deeper shadow */
+
+.card:hover {
+    background: #39458b;
+    color: white;
+    box-shadow: 6px 8px 16px 0 rgba(0, 0, 0, 0.397);
+}
+
+/* Add some padding inside the card container */
+
+.container {
+    padding: 2px 16px;
+}
+
+/* Add rounded corners to the top left and the top right corner of the image */
+
+img {
+    border-radius: 5px 5px 0 0;
+}
+/* Images on cards */
+.service-img {
+    width: 20%;
+    margin: auto 40%;
+    border-radius: 100% ;
+}
