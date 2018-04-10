@@ -1,0 +1,329 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 3000px;
+}
+
+.navbar {
+    box-shadow: 0px 8px 16px 0px #3b3b3b40;
+    z-index: 1;
+}
+
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.navbar-default1 {
+    background-color: white;
+    border-color: transparent;
+}
+
+.navbar-nav ul li a:hover {
+    background-color: #e7e7e7;
+    cursor: pointer;
+}
+
+input[type=text] {
+    z-index: 3;
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 10px;
+    -webkit-transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 100%;
+}
+
+.corouselMain {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.carousel-Img {
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.carousel-caption {
+    top: 200px;
+    text-align: center;
+}
+
+.carousel-caption h1 {
+
+    text-align: center;
+    letter-spacing: 30px;
+    font-size: 80px;
+}
+
+.heading {
+    background: url("images/Deliver-anything.jpeg");
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.text-cont {
+    height: 100vh;
+}
+
+.real1 {
+    background: url("images/Happiness.jpeg");
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: auto;
+}
+
+.real2 {
+    background: url("images/Fast-delivery.jpeg");
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: auto;
+}
+
+.real3 {
+    background: url("images/Happiness.jpeg");
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: auto;
+}
+
+/* business users & work user sign up area*/
+
+.col1 {
+    background-image: url("images/business.jpeg");
+}
+
+.col2 {
+    background-image: url("images/deliveryboy.jpg");
+}
+
+.col1,
+.col2 {
+    height: 300px;
+    margin: 30px 30px 30px 30px;
+    text-align: center;
+    background-color: #222222;
+    background-repeat: repeat;
+    border-radius: 10px;
+    box-shadow: 3px 3px 16px 3px #5a5a5a;
+}
+
+.lgn-btn a:hover,
+.lgn-btn a:active,
+.lgn-btn a:visited,
+.lgn-btn a:link {
+    text-decoration: none;
+}
+
+.col1 h4,
+.col2 h4 {
+    text-align: center;
+    position: absolute;
+    bottom: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 800;
+    text-shadow: 2px 2px #686868;
+}
+
+.col1 p,
+.col2 p {
+    text-decoration: none;
+    color: #f7f7f798;
+    text-shadow: 2px 2px #616161;
+    position: relative;
+    top: 57%;
+}
+
+#round-text1 div,
+#round-text2 div {
+    padding: 3%;
+    margin: 30px 30px 30px 30px;
+    text-align: center;
+    font-size: 18px;
+    color: snow;
+    background: #056c7ea3;
+    background-repeat: repeat;
+    border-radius: 8px;
+}
+
+
+/* login/signup area property to remove the outline of div after clicking */
+
+a:focus,
+a:hover {
+    outline: none;
+}
+
+.name {
+    margin-left: 0px;
+    padding-left: 0%;
+    padding-right: 5%;
+    width: 300px;
+    padding-right: 11%;
+}
+
+.name input {
+    width: 100%;
+}
+
+/* Services CSS */
+
+.sect {
+    height: relative;
+    width: 100%;
+    margin: 0px;
+    background-color: transparent;
+    padding: 0px;
+}
+
+.pad-ing {
+    padding: 4%;
+}
+
+/* Services section */
+
+div.services-section {
+    background: transparent;
+    padding: 2%;
+    font-size: 1.2em;
+}
+
+div.services-section h2 {
+    font-weight: 300;
+}
+
+div.services-section span {
+    border-bottom: 2px solid #000;
+}
+
+.margin-row .col-padding:not(:nth-child(3)) {
+    border-right: 1px solid grey;
+}
+
+div.services-section .margin-row {
+    margin-top: 4%;
+}
+
+div.services-section p {
+    padding: 3% 5%;
+}
+
+div.services-section img {
+    display: block;
+    margin: auto;
+}
+
+/* services end */
+
+.text-cont h1 {
+    margin-top: 50px;
+    letter-spacing: 45px;
+    font-size: 80px;
+}
+
+/* Testimonials section */
+
+.test-img {
+    height: 225px;
+}
+
+div.testimonials {
+    background: rgba(0, 0, 0, 0.781);
+    color: white;
+    padding: 2%;
+}
+
+div.testimonials h1 {
+    font-size: 3rem;
+}
+
+div.testimonials img {
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+
+div.testimonials .margin-row {
+    margin-top: 7%;
+}
+
+.testimonials .margin-row .col-padding {
+    transition: 0.5s;
+}
+
+.testimonials .margin-row .col-padding:hover {
+    background: rgba(255, 255, 255, 0.89);
+    color: black;
+}
+
+div.testimonials p {
+    font-size: 1.18rem;
+}
+
+div.testimonials img:hover {
+    box-shadow: 2px 4px 6px 0 rgba(0, 0, 0, 0.5);
+}
+
+/*footer*/
+
+#footer {
+    position: relative;
+    bottom: inherit;
+    background-color: #565657;
+    margin: 0px;
+    height: 60px;
+    clear: both;
+    border-radius: 5px;
+    color: #ffffff;
+    text-align: center;
+    padding: 0px;
+    font-size: 90%;
+    width: 100%;
+}
+
+#footer ul {
+    padding: 10px;
+    list-style-type: none;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#footer ul li {
+    display: inline;
+}
+
+#footer ul li a {
+    text-decoration: none;
+    font-family: Arial;
+    padding: .2em 1em;
+    color: #efe5d0;
+    background-color: transparent;
+}
+
+#footer ul li a:hover {
+    color: #ffffff;
+    background-color: #131313;
+}
