@@ -1,0 +1,289 @@
+<!--including common header section of the site-->
+<% include partials/themeHeader %>
+
+    <!--Start of main body part-->
+    <!-- carousel -->
+    <div class="container-fluid corouselMain">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner carousel-Img">
+
+                <div class="item active">
+                    <img src="images/Happiness.jpeg" alt="Los Angeles" style="height:100vh;">
+                    <div class="carousel-caption fadeInDown animated ">
+                        <h1>LND</h1>
+                        <p class="wow bounce animated " data-wow-delay="1s" style="font-size:20px;">we delive all u want !</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="images/Fast-delivery.jpeg" alt="Chicago" style="height:100vh;">
+                    <div class="carousel-caption">
+                        <h3>Chicago</h3>
+                        <p>Thank you, Chicago!</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="images/Deliver-anything.jpeg" alt="New York" style="height:100vh;">
+                    <div class="carousel-caption">
+                        <h3>New York</h3>
+                        <p>We love the Big Apple!</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <!-- background images -->
+    <header class="heading ">
+        <div class="container text-cont">
+            <h1 class="text-center display-2">LDN</h1>
+            <h2 class="text-center" style="font-size:50px;">Local Delivery Network</h2>
+            <div class="weight text-padding">
+                <p style="font-size:20px;"> LND provides part-time/full-time employers to deliver your products to the one you wants to. We also provides
+                    part-time/full-time employment to the one who wants to join us.
+                    <br>
+                    <br> Both, the one who wants to deliver product and the one who wants to join us, should
+                    <a href="#register" class="text-decoration"> register</a> to us to perform their respected taks. Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Labore voluptate placeat, illo fugit accusamus quos quod enim aliquid velit debitis, corrupti vero
+                    distinctio? Necessitatibus pariatur nam tempora? Maxime, nisi ad. Lorem, ipsum dolor sit amet consectetur
+                    adipisicing elit. Maiores aut eius amet? Perferendis suscipit eveniet nemo officia repudiandae autem
+                    vero ipsum nulla ducimus explicabo pariatur, neque adipisci quod. Amet, velit? Lorem ipsum dolor sit
+                    amet consectetur, adipisicing elit. Amet consectetur cumque earum animi nulla aliquid reprehenderit,
+                    itaque eveniet cupiditate molestiae ipsa rerum recusandae maxime laborum dignissimos quasi omnis eum
+                    eaque?
+                </p>
+            </div>
+        </div>
+    </header>
+    <!-- business/part-time user starts  -->
+    <section class="real1">
+        <!-- container for login/SignUp area -->
+        <div class="container">
+            <div class="row">
+                <!-- business user block -->
+                <div class="col-md-6 lgn-btn">
+                    <a data-toggle="modal" href='#modal-id'>
+                        <div id="business-user" class="col1">
+                            <h4>Business User</h4>
+                            <p> Click here to Login/SignUp</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- work user block -->
+                <div class="col-md-6 lgn-btn">
+                    <a data-toggle="modal" href='#modal-id'>
+                        <div id="work-user" class="col2">
+                            <h4>Part-time User</h4>
+                            <p> Click here to Login/SignUp</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 visible-md visible-lg" id="round-text1">
+                    <div>
+                        <h1>What is Business user?</h1>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis iusto laudantium optio omnis architecto, doloribus
+
+                    </div>
+                </div>
+                <div class="col-md-6 visible-md visible-lg" id="round-text2">
+                    <div>
+                        <h1>What is Part-time user?</h1>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis iusto laudantium optio omnis architecto, doloribus
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- login/signup Popup structure for popping on clicking the div -->
+        <div class="modal fade" id="modal-id">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="nav-tabs-navigation">
+                            <div class="nav-tabs-wrapper">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h4 class="modal-title">
+                                    <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+                                        <li id="login" class="active">
+                                            <a href="#" data-toggle="tab">Login</a>
+                                        </li>
+                                        <li id="signup" class="active">
+                                            <a href="#" data-toggle="tab">SignUp</a>
+                                        </li>
+                                    </ul>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- popup form -->
+                    <div class="modal-body">
+                        <form class="px-4 py-3" action="login.php" method="post">
+                            <!-- name -->
+                            <div class="container hidden">
+                                <div class="row">
+                                    <div class="name col-md-3">
+                                        <div class="form-group name">
+                                            <div class="name">
+                                                <label for="first-name">First Name</label>
+                                                <input type="text" class="form-control" id="first-name" name="firstName" placeholder="First Name" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="name col-md-3">
+                                        <div class="form-group name">
+                                            <div class="name">
+                                                <label for="last-name">Last Name</label>
+                                                <input type="text" class="form-control" id="last-name" name="lastName" placeholder="Last Name" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- email id -->
+                            <div class="form-group">
+                                <label for="email">Email address</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="email@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <!-- password -->
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" id="password" name="" placeholder="Password" required>
+                            </div>
+                            <div class="form-group hidden">
+                                <label for="re-enter-password">Re-enter Password</label>
+                                <input type="password" class="form-control" id="re-enter-password" name="" placeholder="Re-enter Password" required>
+                            </div>
+                            <div class="form-check check">
+                                <label class="form-check-label" for="checkbox"></label>
+                                <input type="checkbox" class="form-check-input" id="checkbox" name="remember" value="checked"> Remember me
+                            </div>
+                            <div class="form-check check hidden">
+                                <label class="form-check-label" for="terms"></label>
+                                <input type="checkbox" class="form-check-input" id="terms" name="terms" value="checked"> I agree to the
+                                <a href="about-us/terms&Condition.html" target="__new">Terms & Conditions</a> &
+                                <a href="about-us/privacy-policy.html" target="__new">Privacy Policy.</a>
+                            </div>
+                            <button type="submit" id="lgn" class="btn btn-primary">login</button>
+                            <button type="submit" class="btn btn-success hidden">Sign up</button>
+                        </form>
+
+                    </div>
+                    <div class="modal-footer">
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Forgot password?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- business/part-time user end  -->
+    
+    <!-- services -->
+    <section class="real2" id="services">
+        <div class="services-section">
+            <h1 class="text-center display-3 wow bounce animated " data-wow-delay="1s">
+                <span>Services</span>
+            </h1>
+            <div class="container-fluid">
+                <div class="row margin-row">
+                    <div class="col-md-4 col-padding wow rotateInDownLeft animated">
+                        <img src="images/Delivery.png" alt="Delivery">
+                        <h2 class="text-center underline">Door-to-Door Delivery</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates fugiat sapiente maxime recusandae
+                            perspiciatis debitis libero facere, nam id velit sequi commodi aut, quas harum quidem itaque
+                            sunt? Nihil, blanditiis.</p>
+                    </div>
+                    <div class="col-md-4 col-padding wow rotateIn animated">
+                        <img src="images/box.png" alt="Box" style="margin:2% auto;">
+                        <h2 class="text-center">Can Deliver Anything</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates fugiat sapiente maxime recusandae
+                            perspiciatis debitis libero facere, nam id velit sequi commodi aut, quas harum quidem itaque
+                            sunt? Nihil, blanditiis.</p>
+                    </div>
+                    <div class="col-md-4 col-padding wow rotateInDownRight animated">
+                        <img src="images/Coins.png" alt="Coins">
+                        <h2 class="text-center">Part-time Employment</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates fugiat sapiente maxime recusandae
+                            perspiciatis debitis libero facere, nam id velit sequi commodi aut, quas harum quidem itaque
+                            sunt? Nihil, blanditiis.</p>
+                    </div>
+                </div>
+                <div class="text-center display-4">
+                    Somethig goes here which describes our serices.
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services section end -->
+    
+    <!-- Testimonials section -->
+    <div class="container-fluid testimonials">
+        <h1 class="text-center display-4">
+            <span>Words from our founding members</span>
+        </h1>
+        <div class="row margin-row">
+            <div class="col-md-4 col-padding">
+                <img class="img-responsive img-circle test-img" src="https://scontent-bom1-1.xx.fbcdn.net/v/t1.0-9/225904_102654559825788_6667070_n.jpg?_nc_cat=0&oh=37c39ba6eff570ed645a430e184bf052&oe=5B717D6D" alt="">
+                <blockquote class="blockquote">
+                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    <footer class="blockquote-footer">Aditya Singh ,
+                        <cite title="Source Title">Founder of XYZ</cite>
+                    </footer>
+                </blockquote>
+            </div>
+            <div class="col-md-4 col-padding">
+                <img class="img-responsive img-circle" src="images/avtar2.jfif" alt="">
+                <blockquote class="blockquote">
+                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    <footer class="blockquote-footer">Abhijeet Singh ,
+                        <cite title="Source Title">Founder of XYZ</cite>
+                    </footer>
+                </blockquote>
+            </div>
+            <div class="col-md-4 col-padding">
+                <img class="img-responsive img-circle" src="images/avtar2.jfif" alt="">
+                <blockquote class="blockquote">
+                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    <footer class="blockquote-footer">Adarsh Agrawal ,
+                        <cite title="Source Title">Founder of XYZ</cite>
+                    </footer>
+                </blockquote>
+            </div>
+        </div>
+        <div class="h4 text-center" style="margin-top:4%;">
+            We will glad to see your words also
+        </div>
+    </div>
+    <!-- Testimonials section end -->
+    
+    <!--extra div with a background image at bottom-->
+    <section class="real3">
+
+    </section>
+    <!--end of main body part-->
+
+<!--including common footer section of the site-->
+<% include partials/themeFooter %>
