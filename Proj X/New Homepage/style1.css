@@ -219,6 +219,11 @@ div.services-section img{
     font-size:80px;
 }
 /* Testimonials section */
+
+.test-img{
+    height: 200px;
+}
+
 div.testimonials{
     background: rgba(0, 0, 0, 0.781);
     color: white;
