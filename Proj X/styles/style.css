@@ -1,5 +1,4 @@
-html,
-body {
+html, body {
     margin: 0;
     padding: 0;
 }
@@ -65,14 +64,13 @@ input[type=text]:focus {
 }
 
 .carousel-caption h1 {
-
     text-align: center;
     letter-spacing: 30px;
     font-size: 80px;
 }
 
 .heading {
-    background: url("images/Deliver-anything.jpeg");
+    background: url("../images/Deliver-anything.jpeg");
     height: 100vh;
     background-size: cover;
     background-attachment: fixed;
@@ -84,7 +82,7 @@ input[type=text]:focus {
 }
 
 .real1 {
-    background: url("images/Happiness.jpeg");
+    background: url("../images/Happiness.jpeg");
     height: 100vh;
     background-size: cover;
     background-attachment: fixed;
@@ -92,7 +90,7 @@ input[type=text]:focus {
 }
 
 .real2 {
-    background: url("images/Fast-delivery.jpeg");
+    background: url("../images/Fast-delivery.jpeg");
     height: 100vh;
     background-size: cover;
     background-attachment: fixed;
@@ -100,7 +98,7 @@ input[type=text]:focus {
 }
 
 .real3 {
-    background: url("images/Happiness.jpeg");
+    background: url("../images/Happiness.jpeg");
     height: 100vh;
     background-size: cover;
     background-attachment: fixed;
@@ -110,15 +108,14 @@ input[type=text]:focus {
 /* business users & work user sign up area*/
 
 .col1 {
-    background-image: url("images/business.jpeg");
+    background-image: url("../images/business.jpeg");
 }
 
 .col2 {
-    background-image: url("images/deliveryboy.jpg");
+    background-image: url("../images/deliveryboy.jpg");
 }
 
-.col1,
-.col2 {
+.col1, .col2 {
     height: 300px;
     margin: 30px 30px 30px 30px;
     text-align: center;
@@ -128,15 +125,11 @@ input[type=text]:focus {
     box-shadow: 3px 3px 16px 3px #5a5a5a;
 }
 
-.lgn-btn a:hover,
-.lgn-btn a:active,
-.lgn-btn a:visited,
-.lgn-btn a:link {
+.lgn-btn a:hover, .lgn-btn a:active, .lgn-btn a:visited, .lgn-btn a:link {
     text-decoration: none;
 }
 
-.col1 h4,
-.col2 h4 {
+.col1 h4, .col2 h4 {
     text-align: center;
     position: absolute;
     bottom: 40%;
@@ -148,8 +141,7 @@ input[type=text]:focus {
     text-shadow: 2px 2px #686868;
 }
 
-.col1 p,
-.col2 p {
+.col1 p, .col2 p {
     text-decoration: none;
     color: #f7f7f798;
     text-shadow: 2px 2px #616161;
@@ -157,8 +149,7 @@ input[type=text]:focus {
     top: 57%;
 }
 
-#round-text1 div,
-#round-text2 div {
+#round-text1 div, #round-text2 div {
     padding: 3%;
     margin: 30px 30px 30px 30px;
     text-align: center;
@@ -169,11 +160,9 @@ input[type=text]:focus {
     border-radius: 8px;
 }
 
-
 /* login/signup area property to remove the outline of div after clicking */
 
-a:focus,
-a:hover {
+a:focus, a:hover {
     outline: none;
 }
 
