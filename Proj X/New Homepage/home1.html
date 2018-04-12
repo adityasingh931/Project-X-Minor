@@ -7,7 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Arima+Madurai:200,300,400" rel="stylesheet">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Custom Glyphicon -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <link rel="stylesheet" href="style1.css">
     <link rel="stylesheet" href="animate/animate.min.css">
     <link rel="stylesheet" href="animate/animate.css">
@@ -15,7 +19,7 @@
 
 <body>
 
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top" id="navbar1">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -28,7 +32,10 @@
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#">Home</a>
+                        <a href="#"><span class="glyphicon glyphicon-home"></span>&nbsp;Home</a>
+                    </li>
+                    <li>
+                        <a href="#services">services</a>
                     </li>
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">about-us
@@ -46,19 +53,20 @@
                             </li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="#services">services</a>
-                    </li>
+                  
 
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
+                    <!-- <li>
+                        <input type="text" name="search" placeholder="Search..">
+                    </li> -->
                     <li>
                         <a href="#">
-                            <span class="glyphicon glyphicon-user"></span> Sign Up</a>
+                            <span class="glyphicon glyphicon-envelope"></span>&nbsp;contact us</a>
                     </li>
                     <li>
                         <a href="#">
-                            <span class="glyphicon glyphicon-log-in"></span> Login</a>
+                            <span class="glyphicon glyphicon-log-in"></span>&nbsp;Login/Sign Up</a>
                     </li>
                 </ul>
             </div>
@@ -124,19 +132,14 @@
                     part-time/full-time employment to the one who wants to join us.
                     <br>
                     <br> Both, the one who wants to deliver product and the one who wants to join us, should
-                    <a href="#register"
-                        class="text-decoration"> register</a> to us to perform their respected taks. Lorem ipsum dolor sit amet consectetur adipisicing
+                    <a href="#register" class="text-decoration"> register</a> to us to perform their respected taks. Lorem ipsum dolor sit amet consectetur adipisicing
                     elit. Labore voluptate placeat, illo fugit accusamus quos quod enim aliquid velit debitis, corrupti vero
                     distinctio? Necessitatibus pariatur nam tempora? Maxime, nisi ad. Lorem, ipsum dolor sit amet consectetur
                     adipisicing elit. Maiores aut eius amet? Perferendis suscipit eveniet nemo officia repudiandae autem
                     vero ipsum nulla ducimus explicabo pariatur, neque adipisci quod. Amet, velit? Lorem ipsum dolor sit
                     amet consectetur, adipisicing elit. Amet consectetur cumque earum animi nulla aliquid reprehenderit,
                     itaque eveniet cupiditate molestiae ipsa rerum recusandae maxime laborum dignissimos quasi omnis eum
-                    eaque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis harum, exercitationem non distinctio
-                    molestiae nihil blanditiis sunt culpa quis deserunt est vitae iste fugit beatae architecto praesentium,
-                    repellendus rem tenetur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, sed. Rerum
-                    expedita blanditiis, beatae nihil temporibus magni ab eius voluptas saepe voluptatum. Maxime laborum
-                    tenetur placeat deserunt eos accusantium libero.
+                    eaque?
                 </p>
             </div>
         </div>
@@ -171,16 +174,14 @@
                     <div>
                         <h1>What is Business user?</h1>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis iusto laudantium optio omnis architecto, doloribus
-                        corrupti maxime explicabo. Pariatur illo, provident enim est commodi ab eaque neque fugiat porro
-                        perferendis.
+
                     </div>
                 </div>
                 <div class="col-md-6 visible-md visible-lg" id="round-text2">
                     <div>
                         <h1>What is Part-time user?</h1>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis iusto laudantium optio omnis architecto, doloribus
-                        corrupti maxime explicabo. Pariatur illo, provident enim est commodi ab eaque neque fugiat porro
-                        perferendis.
+
                     </div>
                 </div>
             </div>
@@ -270,8 +271,8 @@
     </section>
     <!-- business/part-time user end  -->
     <!-- services -->
-    <section class="real2">
-        <div class="services-section" id="services">
+    <section class="real2" id="services">
+        <div class="services-section">
             <h1 class="text-center display-3 wow bounce animated " data-wow-delay="1s">
                 <span>Services</span>
             </h1>
@@ -306,14 +307,14 @@
         </div>
     </section>
     <!-- Services section end -->
-     <!-- Testimonials section -->
-     <div class="container-fluid testimonials">
+    <!-- Testimonials section -->
+    <div class="container-fluid testimonials">
         <h1 class="text-center display-4">
             <span>Words by famous pesonalities</span>
         </h1>
         <div class="row margin-row">
             <div class="col-md-4 col-padding">
-                <img class="img-responsive img-circle" src="avtar2.jfif" alt="">
+                <img class="img-responsive img-circle test-img" src="https://scontent-bom1-1.xx.fbcdn.net/v/t1.0-9/225904_102654559825788_6667070_n.jpg?_nc_cat=0&oh=37c39ba6eff570ed645a430e184bf052&oe=5B717D6D" alt="">
                 <blockquote class="blockquote">
                     <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
                     <footer class="blockquote-footer">Aditya Singh ,
@@ -345,9 +346,34 @@
         </div>
     </div>
     <!-- Testimonials section end -->
-<section class="real3">
-    
-</section>
+    <section class="real3">
+
+    </section>
+    <!-- footer section -->
+    <footer>
+        <div id="footer">
+            <ul>
+                <li align=left>
+                    <a href="http://facebook.com/Abhijeet.Abzs">
+                        <i class="fab fa-facebook-square"></i>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">Careers</a>
+                </li>
+                <li>
+                    <a href="">Help</a>
+                </li>
+                <li>
+                    <a href="">About</a>
+                </li>
+                <li>Contact information:
+                    <a href="mailto:contact@xyz.com">Mail to our company</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
     <script src="program1.js"></script>
     <script src="js/wow.min.js"></script>
     <script>new WOW().init();</script>
