@@ -136,7 +136,7 @@ hr.style14 {
 } */
 #about .bkgn{
     background-color: rgba(255, 255, 255, 0.514);
-    border: 1px solid black;
+    border: 1px solid rgba(255, 255, 255, 0.356);
 }
 .about-background{
     background-color: #39458bbe;
