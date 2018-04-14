@@ -103,6 +103,13 @@ input[type=text]:focus {
     background-attachment: fixed;
     overflow: auto;
 }
+/* laptop */
+.laptop{
+    
+    
+    margin-top: 100px;
+}
+
  /* business users & work user sign up area*/
  .col1 
  {
