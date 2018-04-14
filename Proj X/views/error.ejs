@@ -2,7 +2,8 @@
 <html>
 
 <head>
-    <title>Effective Error Page Flat Responsive Widget Template :: w3layouts</title>
+    <title>Local Delivery Network - Error</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <!-- custom-theme -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -11,12 +12,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
     <!-- //custom-theme -->
-    <link content-type="text/css" href="/Proj X/styles/error.css" rel="stylesheet" media="all" />
+    <link href="/styles/error.css" rel="stylesheet" type="text/css" media="all" />
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- //js -->
     <!-- font-awesome icons -->
-    <link type="text/css" href="/Proj X/styles/libs/font-awesome.css" rel="stylesheet">
+    <link type="text/css" href="/styles/libs/font-awesome.css" rel="stylesheet">
     <!-- //font-awesome icons -->
     <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">
@@ -26,7 +27,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <div class="main">
         <canvas id="myCanvas"></canvas>
         <div class="agileinfo_404_main">
-            <h1>Effective Error Page</h1>
+            <h1 id="timer" class="container" align="center">Redirecting to Home Page in
+                <span> 5 </span> seconds...</h1>
             <div class="w3_agile_main">
                 <h2>Oooops.... Could not find it</h2>
                 <p>For some reason the page you requested could not be found on Our server.</p>
@@ -34,90 +36,42 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <div class="agile_404_pos">
                         <h3>4
                             <span>0</span>4
-                            <img src="/Proj X/images/1.png" alt=" " /> </h3>
+                            <img src="/images/1.png" alt=" " /> </h3>
                     </div>
-                    <img src="/Proj X/images/3.png" alt=" " class="w3l" />
+                    <img src="/images/3.png" alt=" " class="w3l" />
                 </div>
             </div>
             <div class="agileits_w3layouts_nav">
                 <div class="w3_agileits_nav_left w3">
                     <ul>
                         <li>
-                            <a href="#">Home</a>
+                            <a href="/">Home</a>
                         </li>
                         <li>
-                            <a href="#">About</a>
+                            <a href="/about">About</a>
                         </li>
                         <li>
-                            <a href="#">Services</a>
+                            <a href="/#services">Services</a>
                         </li>
                         <li>
-                            <a href="#">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="wthree_nav_right">
-                    <ul class="agileits_social_list w3ls">
-                        <li>
-                            <a href="#" class="w3_agile_facebook">
-                                <i class="fa fa-facebook" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="agile_twitter">
-                                <i class="fa fa-twitter" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="w3_agile_dribble">
-                                <i class="fa fa-dribbble" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="w3_agile_vimeo">
-                                <i class="fa fa-vimeo" aria-hidden="true"></i>
-                            </a>
+                            <a href="/contact-us">Contact</a>
                         </li>
                     </ul>
                 </div>
                 <div class="clear"> </div>
             </div>
+            <!-- <div class="agileits_copyright">
+                <p>© 2017 Effective Error Page. All rights reserved | Design by
+                    <a href="http://w3layouts.com/" target="_blank">W3layouts</a>
+                </p>
+            </div> -->
         </div>
     </div>
-    <h1 id="timer" class="container" align="center">Redirecting to Home Page in
-        <span> 5 </span> seconds...</h1>
 
-    <div class="agileits_copyright">
-        <p>© 2017 Effective Error Page. All rights reserved | Design by
-            <a href="http://w3layouts.com/" target="_blank">W3layouts</a>
-        </p>
-    </div>
+    <!-- redirecting back to homePage script -->
+    <script src="/scripts/error-redirect.js"></script>
 
-    <!-- redirecting back to homePage in 5 seconds script -->
-    <script>
-
-        // rendering redirect message
-        var time = 5;
-        var intervalId = setInterval(function () {
-            if (time > 0) {
-                document.querySelector("#timer span").innerHTML = time;
-                time--;
-            } else if (time == 0) {
-                document.querySelector("#timer").innerText = "Redirecting ......"
-            }
-            else {
-                clearInterval(intervalId);
-            }
-        }, 1000);
-
-        //redirecting
-        /* setTimeout(function () {
-            window.location.href = "/";
-        }, 5000); */
-
-    </script>
-
-    <script src="/Proj X/scripts/libs/particles.min.js"></script>
+    <script src="/scripts/libs/particles.min.js"></script>
     <script>
         window.onload = function () {
             Particles.init({

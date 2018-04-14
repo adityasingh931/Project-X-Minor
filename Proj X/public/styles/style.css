@@ -3,9 +3,9 @@ html, body {
     padding: 0;
 }
 
-body {
+/* body {
     height: 3000px;
-}
+} */
 
 .navbar {
     box-shadow: 0px 8px 16px 0px #3b3b3b40;
@@ -280,39 +280,107 @@ div.testimonials img:hover {
 
 #footer {
     position: relative;
-    bottom: inherit;
     background-color: #565657;
-    margin: 0px;
-    height: 60px;
-    clear: both;
-    border-radius: 5px;
-    color: #ffffff;
-    text-align: center;
+    margin: 0px auto;
     padding: 0px;
-    font-size: 90%;
+    height: 25vh;
+    font-size: 100%;
     width: 100%;
+    color: #ccc;
 }
 
-#footer ul {
-    padding: 10px;
-    list-style-type: none;
-    text-align: center;
-    border-radius: 5px;
+#footer *{
+    margin-top:auto;
 }
 
-#footer ul li {
-    display: inline;
+#footer h3{
+    text-align: left;
+    text-decoration: underline;
+    color: #000000b8;
+    text-shadow: 1px 1px #f0e2ff96;
+    font-weight: 900;
 }
 
-#footer ul li a {
+
+/* Start of Social media link buttons */
+
+/* a {
     text-decoration: none;
-    font-family: Arial;
-    padding: .2em 1em;
-    color: #efe5d0;
-    background-color: transparent;
 }
 
-#footer ul li a:hover {
-    color: #ffffff;
-    background-color: #131313;
+body a:hover, body a {
+    text-decoration: none;
+} */
+
+ul.social_list {
+    text-align: center;
+    float: left;
+}
+
+.social_list li {
+    display: inline-block;
+}
+
+.social_list li a {
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    font-size: 2.2em;
+    border-radius: 50%;
+}
+
+.social_list li a.facebook {
+    border: 2px solid #3b5998;
+}
+
+.social_list li a.twitter {
+    border: 2px solid #1da1f2;
+}
+
+.social_list li a.github {
+    border: 2px solid #623089;
+}
+
+.social_list li a.youtube {
+    border: 2px solid #ee0e0e;
+}
+
+.social_list li a i {
+    line-height: 1.8em;
+}
+
+.social_list li a:hover {
+    color: #fff;
+}
+
+a.facebook:hover {
+    background: #3b5998;
+    border-color: #3b5998;
+}
+
+a.twitter:hover {
+    background: #1da1f2;
+    border-color: #1da1f2;
+}
+
+a.github:hover {
+    background: #623089;
+    border-color: #623089;
+}
+
+a.youtube:hover {
+    background: #ee0e0e;
+    border-color: #ee0e0e;
+}
+
+/* End of Social media link buttons */
+
+.center{
+    text-align: center;
+}
+
+.center h2{
+    top: 100px;
 }

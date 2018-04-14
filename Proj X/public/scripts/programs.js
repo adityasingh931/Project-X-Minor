@@ -1,6 +1,3 @@
-// Navbar scroll event trigger
-
-
 // business users & work users selection
 var bussUser = document.getElementById("business-user");
 var workUser = document.getElementById("work-user");
@@ -35,8 +32,8 @@ function loginView() {
     document.querySelector("a.dropdown-item").classList.remove("hidden");
     login.classList.add("active");
     signup.classList.remove("active");
-    login.style.color = "blue";
-    signup.style.color = "grey";
+    login.children[0].style.color = "#337ab7";
+    signup.children[0].style.color = "grey";
 }
 
 function signupView() {
@@ -46,10 +43,10 @@ function signupView() {
     document.querySelector("#lgn").classList.add("hidden");
     document.querySelector(".check").classList.add("hidden");
     document.querySelector("a.dropdown-item").classList.add("hidden");
-    signup.style.color = "blue";
-    login.style.color = "grey";
     signup.classList.add("active");
     login.classList.remove("active");
+    signup.children[0].style.color = "#337ab7";
+    login.children[0].style.color = "grey";
 }
 
 /*$(document).ready(function () {

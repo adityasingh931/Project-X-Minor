@@ -1,4 +1,4 @@
-// Navbar scroll event trigger
+/// Navbar scroll event trigger
 window.onscroll = function () { myFunction() };
 function myFunction() {
     if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {

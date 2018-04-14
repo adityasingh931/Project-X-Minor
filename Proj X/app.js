@@ -4,14 +4,16 @@ var app = express();
 
 app.set("view engine", "ejs");
 
-app.use(express.static("images"));
-app.use(express.static("styles"));
-app.use(express.static("scripts"));
+app.use(express.static("public"));
 
 //Start of Routes Logics
 
 app.get("/", function (req, res) {
     res.render("home");    
+});
+
+app.get("/test", function(req, res){
+    res.render("test");
 });
 
 app.get("*", function(req, res){
