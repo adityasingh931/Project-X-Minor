@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="backend-style.css">
+  <link rel="stylesheet" href="jqueryui/jquery-ui.css">
+  <link rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+  <link rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
 </head>
 
 <body>
@@ -40,7 +43,7 @@
       <i class="glyphicon glyphicon-lock"></i>&nbsp logout</a>
   </div>
   <!-- side-bar 3 -->
-  <!-- <div id="mySidenav2" class="sidenav-3">
+  <div id="mySidenav2" class="sidenav-3">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
     <a href="#">
       <img src="images2/avtar2.jfif" alt="Profile Picture" title="" class="proPhoto">
@@ -130,8 +133,9 @@
       <p>Footer Text</p>
     </footer>
   </div>
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="jquery.js"></script>
+  <script src="jqueryui/jquery-ui.js"></script>
   <script>
     // side-bar 2
     function openNav() {
@@ -153,7 +157,7 @@
     function closeNav1() {
       document.getElementById("mySidenav2").style.width = "0";
     }
-
+    
     // more option in sidenav2
     $(document).ready(function () {
       $("#moreclick").slideUp();
