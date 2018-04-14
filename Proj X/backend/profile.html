@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="backend-style.css">
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active">
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Projects</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right avt">
+          <li>
+            <a href="#">
+              <img src="images2/add.png" alt="Add account" title="add acount" class="avatar">
+
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images2/question3.png" alt="support centre" title="support centre" class="avatar">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span style="font-size:30px;cursor:pointer" onclick="openNav1()">
+                <img src="images2/avtar.png" alt="Profile" title="profile" class="avatar">
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- side-bar -->
+  <!-- <div class="sidenav">
+        
+      <a href="#"> <span class="glyphicon glyphicon-user"></span></a>
+      <a href="#"> <span class="glyphicon glyphicon-user"></span></a>
+      <a href="#"> <span class="glyphicon glyphicon-user"></span></a>
+      
+      
+    </div> -->
+  <!-- side-bar2 -->
+  <div id="mySidenav" class="sidenav-2">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+
+  </div>
+  <!-- main section -->
+
+  <main>
+    <div class="container">
+
+      <!-- display profile section -->
+      <div class="row display-profile">
+        <div class="col-md-6">
+          <img class="circle-propic" id="avatar-img" src="images2/avtar.png" alt="User's_Name" title="User's_Name">
+          <button class="btn btn-info center" type="button" data-target="avatar-img">Change Photo</button>
+        </div>
+        <div class="col-md-6 right-float update-info">
+          <h1 id="myname">Adarsh Agrawal</h1>
+          E-mail:
+          <span id="e-mail">asd@example.com</span>
+          <br/> Address:
+          <span id="address">abc</span>
+          <br/> Mob no.:
+          <span id="mobile-no">9876543210</span>
+          <br/> Aadhaar no.:
+          <span id="aadhaar">1234-4567-7890</span>
+          <br/>
+          <button class="btn btn-info" id="edit-info" type="button"> Edit </button>
+        </div>
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>Modal Header</h2>
+            </div>
+            <div class="modal-body">
+              <form action="">
+                Name:
+                <input type="text" id="sh-name" required>
+                <br/> E-mail:
+                <input type="email" id="sh-email" required>
+                <br/> Address:
+                <input type="text" id="sh-address" required>
+                <br/> Mob no.:
+                <input type="text" id="sh-mobileNo" required>
+                <br/> Aadhaar no.:
+                <input type="text" id="sh-aadhaar" readonly>
+                <br/>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-primary" type="submit" id="update-btn">Update</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="details">
+        <h1>
+          <strong> Your Details </strong>
+        </h1>
+        <div class="work-details">
+          <h2>Working details</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="edu-details">
+          <h2>Education details</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="description">
+          <h3>Description of you</h3>
+          <textarea id="textBox" placeholder="Your Description"></textarea>
+          <button class="btn btn-primary button" type="button">Update</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- script for sidebar -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+      document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+      document.body.style.backgroundColor = "white";
+
+    }
+    // profile
+    function openNav1() {
+      document.getElementById("mySidenav2").style.width = "100%";
+    }
+
+    function closeNav1() {
+      document.getElementById("mySidenav2").style.width = "0";
+    }
+    //  Script for description 
+    // Get the modal
+    var modal = document.getElementById('myModal');
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("edit-info");
+
+    // Get the button that updates the modal
+    var update = document.getElementById("update-btn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // Get and Set the previous details to input field
+    document.getElementById("sh-name").value = document.getElementById("myname").innerHTML;
+    document.getElementById("sh-email").value = document.getElementById("e-mail").innerHTML;
+    document.getElementById("sh-address").value = document.getElementById("address").innerHTML;
+    document.getElementById("sh-mobileNo").value = document.getElementById("mobile-no").innerHTML;
+    document.getElementById("sh-aadhaar").value = document.getElementById("aadhaar").innerHTML;
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function () {
+      modal.style.display = "block";
+    }
+
+    // When the user clicks the update button, update the profile
+    update.onclick = function () {
+      var name = document.getElementById("sh-name").value;
+      var email = document.getElementById("sh-email").value;
+      var address = document.getElementById("sh-address").value;
+      var mobileNo = document.getElementById("sh-mobileNo").value;
+
+      document.getElementById("myname").innerHTML = name;
+      document.getElementById("e-mail").innerHTML = email;
+      document.getElementById("address").innerHTML = address;
+      document.getElementById("mobile-no").innerHTML = mobileNo;
+      modal.style.display = "none";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>
