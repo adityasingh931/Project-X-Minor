@@ -105,6 +105,10 @@ input[type=text]:focus {
     overflow: auto;
 }
 
+.laptop{
+    margin-top: 100px;
+}
+
 /* business users & work user sign up area*/
 
 .col1 {
