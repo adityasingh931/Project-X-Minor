@@ -3,7 +3,6 @@ html {
     padding: 0;
     height: 100%;
 }
-
 body, main{
     background-color: #ffffff;
     margin: 0;
@@ -14,6 +13,26 @@ body, main{
 	min-height:80px;
 	width:100px;
 }
+/* Navbar color */
+
+.nav-color , #myNavbar{
+    background: #39458b;
+}
+.nav-hover-color .active{
+    background-color: #293264;
+    color: white;
+}
+.nav-hover-color li a{
+    color: white;
+}
+/* .nav>li>a:hover{
+    background-color: #293264;
+} */
+.nav-hover-color li a:hover{
+    background-color:#293264; 
+    color: white;
+}
+
 
 
 /* Dropdown Button */
@@ -105,7 +124,7 @@ body, main{
     border-radius: 5px;
     color: #ffffff;
     text-align: center;
-    padding: 0px;
+    padding: 20px;
     font-size: 90%;
     width: 100%;
 }
@@ -114,8 +133,9 @@ body, main{
     padding: 5px;
     list-style-type: none;
     text-align: center;
-    margin: 10px;
-    border-radius: 5px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
 }
 
 #footer ul li {
