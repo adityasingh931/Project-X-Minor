@@ -1,44 +1,60 @@
 html {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     height: 100%;
 }
-body, main{
+
+body, main {
     background-color: #ffffff;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     height: 100%;
 }
-#col{
-	min-height:80px;
-	width:100px;
+
+#col {
+    min-height: 80px;
+    width: 100px;
 }
+
 /* Navbar color */
 
-.nav-color , #myNavbar{
-    background: #39458b;
+.navbar {
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    z-index: 1;
+    width: 100%;
+    position: fixed;
+    background-color: #fff;
+    top: 0px;
 }
-.nav-hover-color .active{
-    background-color: #293264;
-    color: white;
+
+.nav-color {
+    box-shadow: 1px 1px 5px 5px #6a6a6b;
 }
-.nav-hover-color li a{
-    color: white;
+
+.nav-hover-color .active {
+    background-color: #6a6a6b;
+    color: rgb(56, 55, 55);
 }
+
+.nav-hover-color li a {
+    color: rgb(56, 55, 55);
+}
+
 /* .nav>li>a:hover{
     background-color: #293264;
 } */
-.nav-hover-color li a:hover{
-    background-color:#293264; 
+
+.nav-hover-color li a:hover {
+    background-color: #6a6a6b;
     color: white;
 }
-
-
 
 /* Dropdown Button */
 
 .dropbtn {
-    background-color:transparent;
+    background-color: transparent;
     color: #9d9d9d;
     padding: 15px;
     font-size: 14px;
@@ -112,19 +128,27 @@ body, main{
     text-decoration: none;
 }
 
+/* carousel */
+
+.carousel {
+    margin-top: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 /*footer*/
 
 #footer {
-    position:relative;
-    bottom:inherit;	
-    background-color: #222222d0;
-    margin:0px;
+    position: relative;
+    bottom: inherit;
+    background-color: #39458b;
+    margin: 0px;
     height: 60px;
     clear: both;
     border-radius: 5px;
     color: #ffffff;
     text-align: center;
-    padding: 20px;
+    padding: 0px;
     font-size: 90%;
     width: 100%;
 }
@@ -133,9 +157,8 @@ body, main{
     padding: 5px;
     list-style-type: none;
     text-align: center;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    margin-right: 10px;
+    margin: 10px;
+    border-radius: 5px;
 }
 
 #footer ul li {
@@ -146,27 +169,71 @@ body, main{
     text-decoration: none;
     font-family: Arial;
     padding: .2em 1em;
-    color: #ffffff;
-    background-color: rgba(51, 51, 51, 0);
+    color: #efe5d0;
+    background-color: transparent;
 }
 
 #footer ul li a:hover {
-    color: #000000;
-    background-color: rgb(255, 255, 255);
-} 
+    color: #ffffff;
+    background-color: #293264;
+}
 
 /* contact us */
-.form-box{
-    height:50%;
-    background-color: red;
+
+.form-required {
+    color: rgb(255, 19, 19);
+    font-size: 16px;
 }
+
+.form-data {
+    margin: 1% 700px 1% 50px;
+    padding: 1% 2%;
+    background-color: #dcdaffee;
+    border-radius: 2%;
+}
+
+.form-data h2 {
+    line-height: 1%;
+}
+
+.form-data p {
+    margin-left: 8 px;
+}
+
+@media(max-width:750px) {
+    .form-data {
+        margin: 50px 75px;
+        padding: 1% 2%;
+        background-color: #dcdaffee;
+        border-radius: 2%;
+    }
+}
+
+/* map embeding on contact us page */
+
+#map {
+    height: 60rem;
+    width: 42%;
+    display: inline;
+    margin: 1rem 2em;
+    float: right;
+}
+
+.contact-details {
+    background-color: #f0f0f0;
+    margin: 50px 500px 50px 4%;
+    padding: 20px;
+    width: 50%;
+    border-radius: 10px;
+}
+
 /* The hero image */
 
 .hero-image {
     /* The image used */
     background-image: url("images/deliveryboy.jpg");
     /* Set a specific height */
-    height: 100%;
+    height: 90%;
     /* Position and center the image to scale nicely on all screens */
     background-position: center;
     background-repeat: no-repeat;
@@ -177,11 +244,12 @@ body, main{
 
 /* Place text in the middle of the image */
 
-.hero-text .btn-lg{
+.hero-text .btn-lg {
     background-color: #39458b;
     color: white;
 }
-.hero-text .btn-lg:hover{
+
+.hero-text .btn-lg:hover {
     background-color: #293264;
     box-shadow: 2px 2px 10px 0 #616161;
 }
@@ -246,17 +314,15 @@ body, main{
     text-align: center;
     background-color: #222222;
     background-repeat: repeat;
+    border-radius: 25px;
+    box-shadow: 5px 5px 15px 10px #9d9d9d;
+}
 
-    border-radius: 10px;
-    box-shadow:3px 3px 16px 3px #5a5a5a;
-  }
- 
-  .lgn-btn a:hover, .lgn-btn a:active, .lgn-btn a:visited, .lgn-btn a:link {
-      text-decoration:none;
-  }
+.lgn-btn a:hover, .lgn-btn a:active, .lgn-btn a:visited, .lgn-btn a:link {
+    text-decoration: none;
+}
 
-    .col1 h4,.col2 h4
-  {
+.col1 h4, .col2 h4 {
     text-align: center;
     position: absolute;
     bottom: 40%;
@@ -266,62 +332,45 @@ body, main{
     font-size: 30px;
     font-weight: 800;
     text-shadow: 2px 2px #686868;
-  }
+}
 
-  .col1  p, .col2 p{
-      text-decoration: none;
-      color: #f7f7f798;
-      text-shadow: 2px 2px #616161;
-      position: relative;
-      top: 57%;
-  }
+.col1 p, .col2 p {
+    text-decoration: none;
+    color: #f7f7f798;
+    text-shadow: 2px 2px #616161;
+    position: relative;
+    top: 57%;
+}
 
-  #round-text1 div, #round-text2 div{
-    padding: 3%;
-    margin:30px 30px 30px 30px;
-    text-align:center;
-    font-size: 18px;
-    color: snow; 
-    background:#056c7e ;
+#round-text1 P, #round-text2 p {
+    padding: 2%;
+    margin: 30px 30px 30px 30px;
+    text-align: center;
+    background-color: #39458b;
+    color: white;
     background-repeat: repeat;
     border-radius: 8px;
 }
 
-  /* login/signup area property to remove the outline of div after clicking */
- a:focus, a:hover
-  {
-    outline:none;
-  }
- 
- .name{
-  margin-left: 0px;
-  padding-left: 0%;
-  padding-right: 5%;
-  width: 300px;
-  padding-right: 11%;
- }
- .name input{
-     width:100%;
- }
-/* Services CSS */
- .sect 
-  {
-    height: relative;
-    width: 100%;
-    margin: 0px;
-    background:#b0b2b4af;
-    padding: 0px;
-  } 
-  .pad-ing{
-      padding: 4%;
-  }
-  /* .back-white{
-      background: radial-gradient(white 1%,white 1%,#2ef11c 98%) ;
-      box-shadow:2px 2px 5px black;
-      border-radius: 10px;
-  } */
+/* login/signup area property to remove the outline of div after clicking */
 
-  /* Services CSS */
+a:focus, a:hover {
+    outline: none;
+}
+
+.name {
+    margin-left: 0px;
+    padding-left: 0%;
+    padding-right: 5%;
+    width: 300px;
+    padding-right: 11%;
+}
+
+.name input {
+    width: 100%;
+}
+
+/* Services CSS */
 
 #services {
     font-size: 1.3em;
@@ -329,7 +378,7 @@ body, main{
     line-height: 1.6em;
     font-family: "Arima Madurai";
     text-overflow: ellipsis;
-    width:100%;
+    width: 100%;
 }
 
 .sect {
@@ -337,12 +386,13 @@ body, main{
     width: 100%;
     margin: 0px;
     background: #d8d8d8;
-    color:black;
+    color: black;
 }
 
 .pad-ing {
     padding: 4%;
 }
+
 .service-heading div h2 {
     margin-top: 3%;
     text-align: center;
@@ -379,9 +429,11 @@ body, main{
 img {
     border-radius: 5px 5px 0 0;
 }
+
 /* Images on cards */
+
 .service-img {
     width: 20%;
     margin: auto 40%;
-    border-radius: 100% ;
+    border-radius: 100%;
 }

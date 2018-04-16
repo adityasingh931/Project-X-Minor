@@ -1,0 +1,33 @@
+{
+  "name": "project-x-minor",
+  "version": "1.0.0",
+  "description": "This is for our minor project work and is for providing a cleaver solution for logistics and supply chain management.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbhiAbzs/Project-X-Minor.git"
+  },
+  "keywords": [
+    "Minor",
+    "Project",
+    "and",
+    "Logistic",
+    "Supplychain",
+    "Management"
+  ],
+  "author": "AbhiAbzs & Group",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AbhiAbzs/Project-X-Minor/issues"
+  },
+  "homepage": "https://github.com/AbhiAbzs/Project-X-Minor#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.8",
+    "express": "^4.16.3",
+    "mongoose": "^5.0.14"
+  }
+}

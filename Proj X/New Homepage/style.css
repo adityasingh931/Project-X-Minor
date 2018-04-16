@@ -1,0 +1,176 @@
+body,html{
+    height: 100%;
+    margin: 0;
+}
+
+/* Navbar section */
+.nav-color{
+    background-color: #39458bbe;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.493)
+}
+.carousel-caption{
+    padding-bottom: 15% ;
+    color: rgb(255, 0, 0);
+}
+.carousel-item img{
+    filter : blur(3px);
+}
+
+/* Section one */
+.section-one{
+    background-color: rgba(252, 252, 252, 0.884);
+}
+div.section-one .weight{
+    padding:2%;
+    margin: 5% auto;
+    font-size: 20px;
+    /* class display and weight should be remove in mobile devices */
+    word-spacing: 10px;
+    line-height: 120%
+}
+div.section-one h1,div.section-one h2{
+    line-height: 90%;
+}
+.text-decoration{
+    text-decoration: underline;
+}
+
+/* Services section */
+div.services-section{
+    background: lightgray;
+    padding: 2%;
+    font-size: 1.2em;
+}
+div.services-section h2{
+    font-weight: 300;
+}
+div.services-section span{
+    border-bottom: 2px solid #000;
+}
+.margin-row .col-padding:not(:nth-child(3)){
+    border-right:1px solid grey;
+}
+div.services-section .margin-row{
+    margin-top: 4%;
+}
+div.services-section p{
+    padding: 3% 5%;
+}
+div.services-section img{
+    display: block;
+    margin: auto;
+}
+
+/* Testimonials section */
+div.testimonials{
+    background: rgba(0, 0, 0, 0.781);
+    color: white;
+    padding: 2%;
+}
+div.testimonials h1{
+    font-size: 3rem;
+}
+div.testimonials img{
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+div.testimonials .margin-row{
+    margin-top: 7%;
+}
+.testimonials .margin-row .col-padding{
+transition: 0.5s;
+}
+.testimonials .margin-row .col-padding:hover{
+    background: rgba(255, 255, 255, 0.89);
+    color: black;
+}
+div.testimonials p{
+    font-size: 1.18rem;
+}
+div.testimonials img:hover{
+    box-shadow: 2px 4px 6px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* About section with parallax */
+.parallax-img{
+    position: relative;
+    background-image: url('pexels.jpeg');
+    min-height: 100%;
+    opacity: 0.80;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* This will create parallax effect */
+    background-attachment: fixed;
+}
+#about,.bkgn{
+    color: black;
+    /* this creating a problem
+    line-height: inherit; */
+}
+.about-background{
+    background-color: #39458bbe;
+    color: rgb(230, 230, 230);
+    line-height: 200%;
+    padding: 2%;
+    margin: 2% auto;
+}
+.about-info{
+    padding: 3% 4% 0 4%;
+}
+.leader-background{
+    background-color: #293264be;
+    color: rgb(230, 230, 230);
+    line-height: 200%;
+    padding: 2%;
+}
+.leader-background img{
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+.leader-background .text-padding{
+    padding: 2%;
+}
+#register{
+    background-color: #fff;
+    color: gray;
+    margin: 4% auto;
+}
+
+/* media queries */
+@media (max-width:700px){
+    .nav-color{
+        background-color:#39458bbe ;
+    }
+    #carouselExampleIndicators{
+        display: none;
+    }
+    .section-one{
+        background-image: url(Web-bg1.jpg);
+        padding-top: 20%;
+        color: white;
+    }
+    .section-one .weight{
+        font-size: 18px;
+    }
+    .margin-row .col-padding{
+        border-right:0;
+    }
+    #about .bkgn{
+        font-size: 60px;
+    }
+    #about .mission-text{
+        font-size: 40px;
+    }
+    .about-info{
+        font-size: 20px;
+    }
+    .leader-background .text-padding{
+        font-size: 20px;
+    }
+    .margin-row{
+        margin: 0;
+    }
+}

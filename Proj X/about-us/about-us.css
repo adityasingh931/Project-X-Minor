@@ -96,7 +96,8 @@ hr.style14 {
     margin-right: -15px;
 }*/
 #res-img{
-    height:500px;
+    height:80vh;
+    width: 100%;
 }
 #te-card2{
     padding: 0;
@@ -105,6 +106,14 @@ hr.style14 {
   {
     width: 100%;
   }
+.flow-words{
+    z-index: 5;
+    float: left;
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    color: white;
+}
   /* maintest{
       height: 500px;
       width: max-content;
@@ -198,7 +207,7 @@ hr.style14 {
         font-size: large;
     }
     #res-img{
-        height: 250px;
+        height: 300px;
     }
     .res-heading{
         font-size: x-large;
