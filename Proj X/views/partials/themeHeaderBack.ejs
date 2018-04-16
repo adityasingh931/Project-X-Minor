@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="backend-style.css">
+  <link rel="stylesheet" href="/styles/backend-style.css">
 </head>
 
 <body>
@@ -16,7 +16,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 sidenavimg">
-          <img src="images2/background.jpg" height="100%" width="100%" alt="Avatar">
+          <img src="/imagesBack/background.jpg" height="100%" width="100%" alt="Avatar">
         </div>
       </div>
     </div>
@@ -43,7 +43,7 @@
   <!-- <div id="mySidenav2" class="sidenav-3">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
     <a href="#">
-      <img src="images2/avtar2.jfif" alt="Profile Picture" title="" class="proPhoto">
+      <img src="/imagesBack/avtar2.jfif" alt="Profile Picture" title="" class="proPhoto">
       <br>
       <a href="#">Account</a>
       <a href="#">Notification</a>
@@ -84,18 +84,18 @@
           <ul class="nav navbar-nav navbar-right avt">
             <li>
               <a href="#">
-                <img src="images2/add.png" alt="Add account" title="add acount" class="avatar">
+                <img src="/imagesBack/add.png" alt="Add account" title="add acount" class="avatar">
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="images2/question3.png" alt="support centre" title="support centre" class="avatar">
+                <img src="/imagesBack/question3.png" alt="support centre" title="support centre" class="avatar">
               </a>
             </li>
             <li>
               <a href="#">
                 <span style="font-size:30px;cursor:pointer" onclick="openNav1()">
-                  <img src="images2/avtar.png" alt="Profile" title="profile" class="avatar">
+                  <img src="/imagesBack/avtar.png" alt="Profile" title="profile" class="avatar">
                 </span>
               </a>
             </li>
@@ -103,66 +103,3 @@
         </div>
       </div>
     </nav>
-    <!-- jumbotron -->
-    <div class="jumbotron">
-      <div class="container text-center">
-        <h1>L D N</h1>
-        <p>best delivery services provided by us</p>
-      </div>
-    </div>
-    <div class="container text-center">
-      <div class="row">
-        <div class="col-md-12 col-xs-12 well">
-          <img src="images2/background.jpg" height="100%" width="100%" alt="Avatar">
-        </div>
-      </div>
-    </div>
-    <div class="container-fluid text-center">
-      <div class="row">
-        <div class="col-md-12 col-xs-12 well2">
-          <img src="images2/deliveryboy.jpg" height="100%" width="100%" alt="Avatar">
-        </div>
-      </div>
-    </div>
-
-    <!-- footer -->
-    <footer class="container-fluid text-center">
-      <p>Footer Text</p>
-    </footer>
-  </div>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script>
-    // side-bar 2
-    function openNav() {
-      document.getElementById("mySidenav").style.width = "250px";
-      document.getElementById("main").style.marginLeft = "250px";
-      document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-    }
-
-    function closeNav() {
-      document.getElementById("mySidenav").style.width = "0";
-      document.getElementById("main").style.marginLeft = "0";
-      document.body.style.backgroundColor = "white";
-    }
-    // profile
-    function openNav1() {
-      document.getElementById("mySidenav2").style.width = "100%";
-    }
-
-    function closeNav1() {
-      document.getElementById("mySidenav2").style.width = "0";
-    }
-
-    // more option in sidenav2
-    $(document).ready(function () {
-      $("#moreclick").slideUp();
-      $("#more").click(function () {
-        $("#moreclick").slideToggle();
-      });
-    });
-  </script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</body>
-
-</html>
