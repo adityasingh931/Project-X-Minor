@@ -3,7 +3,7 @@ var express = require("express"),
     mongoose = require("mongoose"),
     bodyParser = require("body-parser"),
     passport = require("passport"),
-    localStrategy = require("passport-local").Strategy,
+    passLocal = require("passport-local"),
     passLocalMongoose = require("passport-local-mongoose"),
     express_session = require("express-session"),
     bussUser = require("./models/bussUser");
@@ -25,48 +25,48 @@ app.use(express_session({
 app.use(passport.initialize());
 app.use(passport.session());
 //used for reading the data from session and encoding & decoding it.
-passport.use(new localStrategy(bussUser.authenticate()));
 passport.serializeUser(bussUser.serializeUser());
 passport.deserializeUser(bussUser.deserializeUser());
+passport.use(new passLocal(bussUser.authenticate()));
+
 
 //Start of Routing Logics
 //========================
 
 app.get("/", function (req, res) {
     res.render("home");
-    console.log(req.bussUser);
 });
 
 //signup auth routes
 app.post("/signup", function (req, res) {
-    var data = new bussUser({ firstName: req.body.firstName, lastName: req.body.lastName, username: req.body.email, rePassword: req.body.rePassword, terms: req.body.terms });
-    bussUser.register(data, req.body.password, function (err, returnUser) {
+    // var data = new bussUser({ firstName: req.body.firstName, lastName: req.body.lastName, username: req.body.email, rePassword: req.body.rePassword, terms: req.body.terms });
+    bussUser.register({ firstName: req.body.firstName, lastName: req.body.lastName, username: req.body.email, rePassword: req.body.rePassword}, req.body.password, function (err, returnUser) {
         if (err) {
             console.log("Authentication error");
             console.log(err);
-            return res.redirect("/");
+            return res.redirect("/test");
         }
         passport.authenticate("local")(req, res, function () {
-            console.log(req.bussUser);
-            return res.redirect("/dashboard");
+            console.log(returnUser);
+            res.redirect("/signup");
         });
+        console.log(returnUser);
     });
-    res.render("signup");
 });
 
 app.get("/signup", function (req, res) {
-    res.redirect("/");
+    res.render("signup");
 });
 
 //login auth routes
 app.get("/login", function (req, res) {
+    console.log(req.body.email);
     res.redirect("/dashboard");
 });
 app.post("/login", passport.authenticate("local", {
     successRedirect: "/dashboard",
-    failureRedirect: "/"
+    failureRedirect: "/test"
 }), function (req, res) {
-    //My extra logic for assigning values in page.
 });
 
 //dashboard -> opens only when loged in or just now signed up
@@ -79,21 +79,14 @@ function isLoggedIn(req, res, next) {
     if (req.isAuthenticated()) {
         return next;
     }
-    res.redirect("/");
+    res.redirect("/test");
 }
-
-//logout routing logic
-app.get("/logout", function (req, res) {
-    req.logout();
-    res.redirect("/");
-});
 
 //extra routes
 app.get("/test", function (req, res) {
     res.render("test");
 });
 
-//catch all route
 app.get("*", function (req, res) {
     res.render("error");
 });

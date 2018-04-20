@@ -182,6 +182,10 @@ a:focus, a:hover {
     width: 100%;
 }
 
+.error-msg{
+    display: none;
+}
+
 /* Services CSS */
 
 .sect {

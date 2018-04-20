@@ -75,7 +75,7 @@
         </div>
     </header>
     <!-- business/part-time user starts  -->
-    <section class="real1">
+    <section id="buss-work" class="real1">
         <!-- container for login/SignUp area -->
         <div class="container">
             <div class="row">
@@ -140,7 +140,10 @@
                     </div>
                     <!-- popup form -->
                     <div class="modal-body">
-                        <form class="px-4 py-3" action="login.php" method="post">
+                        <div class="alert alert-danger error-msg">
+                            <strong></strong>
+                        </div>
+                        <form class="px-4 py-3" action="" method="post">
                             <!-- name -->
                             <div class="container hidden">
                                 <div class="row">
@@ -148,7 +151,7 @@
                                         <div class="form-group name">
                                             <div class="name">
                                                 <label for="first-name">First Name</label>
-                                                <input type="text" class="form-control" id="first-name" name="firstName" placeholder="First Name" required>
+                                                <input type="text" class="form-control" id="first-name" name="firstName" placeholder="First Name">
                                             </div>
                                         </div>
                                     </div>
@@ -156,7 +159,7 @@
                                         <div class="form-group name">
                                             <div class="name">
                                                 <label for="last-name">Last Name</label>
-                                                <input type="text" class="form-control" id="last-name" name="lastName" placeholder="Last Name" required>
+                                                <input type="text" class="form-control" id="last-name" name="lastName" placeholder="Last Name">
                                             </div>
                                         </div>
                                     </div>
@@ -170,24 +173,24 @@
                             <div class="form-group">
                                 <!-- password -->
                                 <label for="password">Password</label>
-                                <input type="password" class="form-control" id="password" name="" placeholder="Password" required>
+                                <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
                             </div>
                             <div class="form-group hidden">
                                 <label for="re-enter-password">Re-enter Password</label>
-                                <input type="password" class="form-control" id="re-enter-password" name="" placeholder="Re-enter Password" required>
+                                <input type="password" class="form-control" id="re-enter-password" name="rePassword" placeholder="Re-enter Password">
                             </div>
                             <div class="form-check check">
-                                <label class="form-check-label" for="checkbox"></label>
-                                <input type="checkbox" class="form-check-input" id="checkbox" name="remember" value="checked"> Remember me
+                                <label class="form-check-label" for="remember-me"></label>
+                                <input type="checkbox" class="form-check-input" id="remember-me" name="remember" value="checked"> Remember me
                             </div>
                             <div class="form-check check hidden">
                                 <label class="form-check-label" for="terms"></label>
                                 <input type="checkbox" class="form-check-input" id="terms" name="terms" value="checked"> I agree to the
-                                <a href="about-us/terms&Condition.html" target="__new">Terms & Conditions</a> &
-                                <a href="about-us/privacy-policy.html" target="__new">Privacy Policy.</a>
+                                <a href="about-us/terms&Condition.html" target="_blank">Terms & Conditions</a> &
+                                <a href="about-us/privacy-policy.html" target="_blank">Privacy Policy.</a>
                             </div>
-                            <button type="submit" id="lgn" class="btn btn-primary">login</button>
-                            <button type="submit" class="btn btn-success hidden">Sign up</button>
+                            <button type="submit" id="login-btn" class="btn btn-primary">login</button>
+                            <button type="submit" id="signup-btn" class="btn btn-success hidden">Sign up</button>
                         </form>
 
                     </div>
@@ -319,9 +322,7 @@
 
             </div>
         </div>
-
         </div>
-
     </section>
     <!-- End lower section with lappy -->
     <!--end of main body part-->
